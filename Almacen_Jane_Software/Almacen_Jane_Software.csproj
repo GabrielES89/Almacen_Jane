@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Class1.cs" />
+    <Compile Include="Class\Class2.cs" />
     <Compile Include="ClsConexion.cs" />
     <Compile Include="ClsCorreo.cs" />
     <Compile Include="ClsModulos.cs" />
@@ -95,6 +95,7 @@
     <Compile Include="FrmRestablecerContraseña.Designer.cs">
       <DependentUpon>FrmRestablecerContraseña.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewFolder1\Class1.cs" />
     <Compile Include="NewFolder1\Ejemplo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
