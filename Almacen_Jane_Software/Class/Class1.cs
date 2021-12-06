@@ -8,5 +8,6 @@ namespace Almacen_Jane_Software.Class
 {
     class Class1
     {
+        //aaaa
     }
 }

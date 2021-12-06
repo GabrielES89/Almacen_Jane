@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Class1.cs" />
     <Compile Include="ClsConexion.cs" />
     <Compile Include="ClsCorreo.cs" />
     <Compile Include="ClsModulos.cs" />
@@ -171,8 +172,6 @@
   <ItemGroup>
     <None Include="Resources\Guardar.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Class\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
