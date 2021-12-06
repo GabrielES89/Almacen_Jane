@@ -95,8 +95,6 @@
     <Compile Include="FrmRestablecerContraseña.Designer.cs">
       <DependentUpon>FrmRestablecerContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewFolder1\Class1.cs" />
-    <Compile Include="NewFolder1\Ejemplo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmFactura.resx">

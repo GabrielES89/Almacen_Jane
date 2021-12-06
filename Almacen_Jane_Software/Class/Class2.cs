@@ -8,6 +8,6 @@ namespace Almacen_Jane_Software.Class
 {
     class Class2
     {
-        //bjhg
+        //b
     }
 }
