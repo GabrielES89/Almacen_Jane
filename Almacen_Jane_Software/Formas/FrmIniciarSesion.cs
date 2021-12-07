@@ -89,7 +89,7 @@ namespace Almacen_Jane_Software
             }
             else
             {
-                MessageBox.Show("Usuario no enconrado");
+                MessageBox.Show("Usuario no encontrado");
             }
         }
 
