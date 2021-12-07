@@ -12,7 +12,7 @@ namespace Almacen_Jane_Software
     {
         public DataTable Consultar(string Usuario)
         {
-            string Comandos = "SELECT T_U.Nombre, T_U.Contraseña, T_E.Status FROM usuarios AS T_U INNER JOIN empleados AS T_E ON T_U.Id_Empleado = T_E.Id_Empleado WHERE T_U.Nombre = '" + Usuario + "'";
+            string Comandos = "SELECT T_U.Nombre, T_U.Contraseña, T_E.Status FROM tb_usuarios AS T_U INNER JOIN tb_empleados AS T_E ON T_U.Id_Empleado = T_E.Id_Empleado WHERE T_U.Nombre = '" + Usuario + "'";
             DataTable Tabla = new DataTable();
             Tabla.Columns.Add("Nombre");
             Tabla.Columns.Add("Contraseña");

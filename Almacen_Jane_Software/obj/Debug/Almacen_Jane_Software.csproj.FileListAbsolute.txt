@@ -32,3 +32,37 @@ D:\Desktop\Trabajo\Jane Software\Almacen_Jane_Software\Almacen_Jane_Software\obj
 D:\Desktop\Trabajo\Jane Software\Almacen_Jane_Software\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmCambiarContraseña.resources
 D:\Desktop\Trabajo\Jane Software\Almacen_Jane_Software\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmInsertarYEditar.resources
 D:\Desktop\Trabajo\Jane Software\Almacen_Jane_Software\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmFactura.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\Almacen_Jane_Software.exe.config
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\Almacen_Jane_Software.exe
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\Almacen_Jane_Software.pdb
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Data.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Web.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\Google.Protobuf.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\Zstandard.Net.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\BouncyCastle.Crypto.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\Ubiety.Dns.Core.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\System.Memory.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\System.Buffers.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\K4os.Compression.LZ4.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\K4os.Hash.xxHash.dll
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Data.xml
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Web.xml
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csprojAssemblyReference.cache
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.exe.config
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmFactura.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmInicio.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmCambiarContraseña.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmInsertarYEditar.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmMenu.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmRegistrarse.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmRestablecerContraseña.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Properties.Resources.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.GenerateResource.cache
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.CoreCompileInputs.cache
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.CopyComplete
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.exe
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.pdb

@@ -71,7 +71,7 @@ namespace Almacen_Jane_Software
             {
                 if (txtContraseña.Text == TablaSesion.Rows[0][1].ToString())
                 {
-                    if (TablaSesion.Rows[0][2].ToString() == "Activo")
+                    if (TablaSesion.Rows[0][2].ToString() == "0")
                     {
                         FrmMenu ObjMenu = new FrmMenu();
                         this.Invoke(new Action(() => this.Hide()));

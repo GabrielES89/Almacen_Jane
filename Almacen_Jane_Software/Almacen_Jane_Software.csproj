@@ -49,75 +49,72 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Class2.cs" />
-    <Compile Include="Class\Class3.cs" />
-    <Compile Include="ClsConexion.cs" />
-    <Compile Include="ClsCorreo.cs" />
-    <Compile Include="ClsModulos.cs" />
-    <Compile Include="FrmFactura.cs">
+    <Compile Include="Clases\ClsConexion.cs" />
+    <Compile Include="Clases\ClsCorreo.cs" />
+    <Compile Include="Clases\ClsModulos.cs" />
+    <Compile Include="Formas\FrmFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFactura.Designer.cs">
+    <Compile Include="Formas\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmIniciarSesion.cs">
+    <Compile Include="Formas\FrmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIniciarSesion.Designer.cs">
+    <Compile Include="Formas\FrmIniciarSesion.Designer.cs">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCambiarContraseña.cs">
+    <Compile Include="Formas\FrmCambiarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCambiarContraseña.Designer.cs">
+    <Compile Include="Formas\FrmCambiarContraseña.Designer.cs">
       <DependentUpon>FrmCambiarContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmInsertarYEditar.cs">
+    <Compile Include="Formas\FrmInsertarYEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmInsertarYEditar.Designer.cs">
+    <Compile Include="Formas\FrmInsertarYEditar.Designer.cs">
       <DependentUpon>FrmInsertarYEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMenu.cs">
+    <Compile Include="Formas\FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMenu.Designer.cs">
+    <Compile Include="Formas\FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrarse.cs">
+    <Compile Include="Formas\FrmRegistrarse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistrarse.Designer.cs">
+    <Compile Include="Formas\FrmRegistrarse.Designer.cs">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRestablecerContraseña.cs">
+    <Compile Include="Formas\FrmRestablecerContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRestablecerContraseña.Designer.cs">
+    <Compile Include="Formas\FrmRestablecerContraseña.Designer.cs">
       <DependentUpon>FrmRestablecerContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewFolder1\Class1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmFactura.resx">
+    <EmbeddedResource Include="Formas\FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmIniciarSesion.resx">
+    <EmbeddedResource Include="Formas\FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCambiarContraseña.resx">
+    <EmbeddedResource Include="Formas\FrmCambiarContraseña.resx">
       <DependentUpon>FrmCambiarContraseña.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmInsertarYEditar.resx">
+    <EmbeddedResource Include="Formas\FrmInsertarYEditar.resx">
       <DependentUpon>FrmInsertarYEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenu.resx">
+    <EmbeddedResource Include="Formas\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarse.resx">
+    <EmbeddedResource Include="Formas\FrmRegistrarse.resx">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRestablecerContraseña.resx">
+    <EmbeddedResource Include="Formas\FrmRestablecerContraseña.resx">
       <DependentUpon>FrmRestablecerContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
