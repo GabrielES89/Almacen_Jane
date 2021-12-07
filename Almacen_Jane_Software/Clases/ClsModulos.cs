@@ -12,7 +12,7 @@ namespace Almacen_Jane_Software
     {
         public DataTable Consultar(string Usuario)
         {
-            string Comandos = "SELECT T_U.Nombre, T_U.Contraseña, T_E.Status FROM tb_usuarios AS T_U INNER JOIN tb_empleados AS T_E ON T_U.Id_Empleado = T_E.Id_Empleado WHERE T_U.Nombre = '" + Usuario + "'";
+            string Comandos = "SELECT T_U.nombre, T_U.contraseña, T_E.status FROM tb_usuarios AS T_U INNER JOIN tb_empleados AS T_E ON T_U.id_empleado = T_E.id_empleado WHERE T_U.nombre = '" + Usuario + "'";
             DataTable Tabla = new DataTable();
             Tabla.Columns.Add("Nombre");
             Tabla.Columns.Add("Contraseña");
@@ -50,34 +50,34 @@ namespace Almacen_Jane_Software
                 switch (Query)
                 {
                     case 0:
-                        Comandos = "SELECT Nombres, Apellido_P, Apellido_M, Telefono, Correo, Direccion, Puesto, Status, Matricula FROM `empleados`";
+                        Comandos = "SELECT nombres, apellido_p, apellido_m, telefono, correo, direccion, puesto, status, matricula FROM `tb_empleados`";
                         break;
                     case 1:
-                        Comandos = "SELECT Nombre, Descripcion, Cantidad FROM `productos`";
+                        Comandos = "SELECT nombre, descripcion, cantidad FROM `tb_productos`";
                         break;
                     case 2:
-                        Comandos = "SELECT T_P.Nombre, T_A.Codigo_Scan, T_A.Fecha_Registro FROM `tb_almacen` as T_A INNER JOIN productos as T_P ON T_A.Id_Producto = T_P.Id_Producto";
+                        Comandos = "SELECT T_P.nombre, T_A.codigo_scan, T_A.fecha_registro FROM `tb_almacen` as T_A INNER JOIN tb_productos as T_P ON T_A.id_producto = T_P.id_producto";
                         break;
                     case 3:
-                        Comandos = "SELECT T_Prod.Nombre, T_E.Cantidad, T_E.Fecha, CONCAT(T_Emple.Apellido_P, ' ', T_Emple.Apellido_M, ' ', T_Emple.Nombres) as Empleado, T_Prov.Nombre as Proveedor FROM `entrada` as T_E INNER JOIN proveedor as T_Prov ON T_E.Id_Proveedor = T_Prov.Id_Proveedor INNER JOIN empleados as T_Emple ON T_E.Id_Empleado = T_Emple.Id_Empleado INNER JOIN productos as T_Prod ON T_E.Id_Producto = T_Prod.Id_Producto";
+                        Comandos = "SELECT T_Prod.nombre, T_E.cantidad, T_E.fecha, CONCAT(T_Emple.apellido_p, ' ', T_Emple.apellido_m, ' ', T_Emple.nombres) as Empleado, T_Prov.nombre as Proveedor FROM `tb_entrada` as T_E INNER JOIN tb_proveedor as T_Prov ON T_E.id_proveedor = T_Prov.id_proveedor INNER JOIN tb_empleados as T_Emple ON T_E.id_empleado = T_Emple.id_empleado INNER JOIN tb_productos as T_Prod ON T_E.id_producto = T_Prod.id_producto";
                         break;
                     case 4:
-                        Comandos = "SELECT T_Prod.Nombre, T_S.Cantidad, T_S.Fecha, CONCAT(T_Emple.Apellido_P, ' ', T_Emple.Apellido_M, ' ', T_Emple.Nombres) as Empleado FROM `Salida` as T_S INNER JOIN empleados as T_Emple ON T_S.Id_Empleado = T_Emple.Id_Empleado INNER JOIN productos as T_Prod ON T_S.Id_Producto = T_Prod.Id_Producto";
+                        Comandos = "SELECT T_Prod.nombre, T_S.cantidad, T_S.fecha, CONCAT(T_Emple.apellido_p, ' ', T_Emple.apellido_m, ' ', T_Emple.nombres) as Empleado FROM `tb_salida` as T_S INNER JOIN tb_empleados as T_Emple ON T_S.id_empleado = T_Emple.id_empleado INNER JOIN tb_productos as T_Prod ON T_S.id_producto = T_Prod.id_producto";
                         break;
                     case 5:
-                        Comandos = "SELECT T_P.Nombre, T_A.Codigo_Scan, T_A.Fecha_Registro FROM `tb_almacen` as T_A INNER JOIN productos as T_P ON T_A.Id_Producto = T_P.Id_Producto";
+                        Comandos = "SELECT T_P.Nombre, T_A.Codigo_Scan, T_A.Fecha_Registro FROM `tb_almacen` as T_A INNER JOIN tb_productos as T_P ON T_A.id_producto = T_P.id_producto";
                         break;
                     case 6:
-                        Comandos = "SELECT T_P_A.Proceso_almacen, T_A.Codigo_Scan, T_B_A.Fecha_Bitacora as Fecha, T_E.Matricula, T_C.Nombre_Completo as Cliente, T_B_A.Notas FROM `tb_bitacora_almacen` as T_B_A INNER JOIN tb_almacen as T_A ON T_B_A.Id_Almacen = T_A.Id_Almacen INNER JOIN tb_proceso_almacen as T_P_A ON T_B_A.Id_Proceso_Almacen = T_P_A.Id_Proceso_Almacen INNER JOIN empleados as T_E ON T_B_A.Id_Empleado = T_E.Id_Empleado INNER JOIN tb_clientes as T_C ON T_B_A.Id_Cliente = T_C.Id_Cliente";
+                        Comandos = "SELECT T_P_A.proceso_almacen, T_A.codigo_scan, T_B_A.fecha_bitacora as Fecha, T_E.matricula, T_C.nombre_completo as Cliente, T_B_A.notas FROM `tb_bitacora_almacen` as T_B_A INNER JOIN tb_almacen as T_A ON T_B_A.id_almacen = T_A.id_almacen INNER JOIN tb_proceso_almacen as T_P_A ON T_B_A.id_proceso_almacen = T_P_A.id_proceso_almacen INNER JOIN tb_empleados as T_E ON T_B_A.id_empleado = T_E.id_empleado INNER JOIN tb_clientes as T_C ON T_B_A.id_cliente = T_C.id_cliente";
                         break;
                     case 8:
-                        Comandos = "SELECT `Nombre`, `Telefono`, `Correo`, `Direccion` FROM `proveedor`";
+                        Comandos = "SELECT `nombre`, `telefono`, `correo`, `direccion` FROM `tb_proveedor`";
                         break;
                     case 9:
-                        Comandos = "SELECT `Nombre_Completo`, `Telefono`, `Correo_Electronico`, `Direccion` FROM `tb_clientes`";
+                        Comandos = "SELECT `nombre_completo`, `telefono`, `correo_electronico`, `direccion` FROM `tb_clientes`";
                         break;
                     case 10:
-                        Comandos = "SELECT `Nombre`, `Privilegios`FROM `usuarios`";
+                        Comandos = "SELECT `nombre`, `privilegios`FROM `tb_usuarios`";
                         break;
                     default:
                         break;
@@ -97,7 +97,7 @@ namespace Almacen_Jane_Software
             string Comandos = "";
             try
             {
-                Comandos = "SELECT Id_Proveedor, Nombre FROM `proveedor`";
+                Comandos = "SELECT id_proveedor, nombre FROM `tb_proveedor`";
                 MySqlCommand Comando = new MySqlCommand(Comandos, Databaseconexion);
                 MySqlDataAdapter Adaptador = new MySqlDataAdapter(Comando);
                 Adaptador.Fill(Tabla);
@@ -114,7 +114,7 @@ namespace Almacen_Jane_Software
             string Comandos = "";
             try
             {
-                Comandos = "SELECT T_Prod.Nombre, T_Prod.Marca, T_Prod.Modelo, T_Prod.Parte FROM proveedor as T_Prov INNER JOIN entrada as T_Entr on T_Prov.Id_Proveedor = T_Entr.Id_Proveedor INNER JOIN productos as T_Prod on T_Entr.Id_Producto = T_Prod.Id_Producto WHERE T_Prov.Id_Proveedor = '" + Id_Productos +"'";
+                Comandos = "SELECT T_Prod.nombre, T_Prod.marca, T_Prod.modelo, T_Prod.parte FROM tb_proveedor as T_Prov INNER JOIN tb_entrada as T_Entr on T_Prov.id_proveedor = T_Entr.id_proveedor INNER JOIN tb_productos as T_Prod on T_Entr.id_producto = T_Prod.id_producto WHERE T_Prov.id_proveedor = '" + Id_Productos +"'";
                 MySqlCommand Comando = new MySqlCommand(Comandos, Databaseconexion);
                 MySqlDataAdapter Adaptador = new MySqlDataAdapter(Comando);
                 Adaptador.Fill(Tabla);
@@ -127,7 +127,7 @@ namespace Almacen_Jane_Software
         }
         public DataTable ConsultarMatricula(string Matricula)
         {
-            string Comandos = "Select T_U.Nombre, T_E.Matricula, T_E.Status, T_E.Id_Empleado FROM empleados as T_E LEFT JOIN usuarios as T_U ON T_E.Id_Empleado = T_U.Id_Empleado WHERE T_E.Matricula = '" + Matricula + "'";
+            string Comandos = "Select T_U.nombre, T_E.matricula, T_E.status, T_E.id_empleado FROM tb_empleados as T_E LEFT JOIN tb_usuarios as T_U ON T_E.id_empleado = T_U.id_empleado WHERE T_E.matricula = '" + Matricula + "'";
             DataTable Tabla = new DataTable();
             Tabla.Columns.Add("Nombre");
             Tabla.Columns.Add("Matricula");
@@ -195,7 +195,7 @@ namespace Almacen_Jane_Software
         {
             try
             {
-                string Comandos = "INSERT INTO `usuarios`(`Nombre`, `Contraseña`, `Privilegios`, `Id_Empleado`) VALUES ('" + Usuario + "','" + Contraseña + "','Basico','" + Id_Empleado + "')";
+                string Comandos = "INSERT INTO `tb_usuarios`(`nombre`, `contraseña`, `privilegios`, `id_empleado`) VALUES ('" + Usuario + "','" + Contraseña + "','Basico','" + Id_Empleado + "')";
                 MySqlCommand Comando = new MySqlCommand(Comandos, Databaseconexion);
                 Comando.CommandTimeout = 60;
                 MySqlDataReader Reader;

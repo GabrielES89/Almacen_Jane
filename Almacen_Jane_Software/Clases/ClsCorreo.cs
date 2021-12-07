@@ -69,7 +69,7 @@ namespace Almacen_Jane_Software
         {
             try
             {
-                string Comandos = "UPDATE `empleados` SET `Codigo_Recuperar` = '" + Codigo + "' WHERE Matricula = '" + Matricula + "'";
+                string Comandos = "UPDATE `tb_empleados` SET `codigo_recuperar` = '" + Codigo + "' WHERE matricula = '" + Matricula + "'";
                 MySqlCommand Comando = new MySqlCommand(Comandos, Databaseconexion);
                 Comando.CommandTimeout = 60;
                 MySqlDataReader Reader;
@@ -87,7 +87,7 @@ namespace Almacen_Jane_Software
         {
             try
             {
-                string Comandos = "UPDATE `empleados` SET `Codigo_Recuperar` = '" + Codigo + "' WHERE Id_Empleado = '" + Id_Empleado + "'";
+                string Comandos = "UPDATE `tb_empleados` SET `codigo_recuperar` = '" + Codigo + "' WHERE id_empleado = '" + Id_Empleado + "'";
                 MySqlCommand Comando = new MySqlCommand(Comandos, Databaseconexion);
                 Comando.CommandTimeout = 60;
                 MySqlDataReader Reader;
@@ -105,7 +105,7 @@ namespace Almacen_Jane_Software
         {
             try
             {
-                string Comandos = "UPDATE `usuarios` SET `Contraseña` = '" + Contraseña + "' WHERE Id_Empleado = '" + Id_Empleado + "'";
+                string Comandos = "UPDATE `tb_usuarios` SET `contraseña` = '" + Contraseña + "' WHERE id_empleado = '" + Id_Empleado + "'";
                 MySqlCommand Comando = new MySqlCommand(Comandos, Databaseconexion);
                 Comando.CommandTimeout = 60;
                 MySqlDataReader Reader;
@@ -121,7 +121,7 @@ namespace Almacen_Jane_Software
         }
         public DataTable ConsultarCodigo(int Id_Empleado)
         {
-            string Comandos = "Select Id_Empleado, Codigo_Recuperar FROM empleados WHERE Id_Empleado = '" + Id_Empleado + "'";
+            string Comandos = "Select id_empleado, codigo_recuperar FROM tb_empleados WHERE id_empleado = '" + Id_Empleado + "'";
             DataTable Tabla = new DataTable();
             Tabla.Columns.Add("Id_Empleado");
             Tabla.Columns.Add("Codigo");
