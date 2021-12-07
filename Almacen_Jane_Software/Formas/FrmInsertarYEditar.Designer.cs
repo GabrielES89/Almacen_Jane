@@ -50,6 +50,7 @@
             this.txtCampo8 = new System.Windows.Forms.TextBox();
             this.txtCampo9 = new System.Windows.Forms.TextBox();
             this.txtCampo6 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.PanelCampos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -252,11 +253,21 @@
             this.txtCampo6.Size = new System.Drawing.Size(100, 20);
             this.txtCampo6.TabIndex = 60;
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Almacen_Jane_Software.Properties.Resources.aaaaa;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(55, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(137, 85);
+            this.panel1.TabIndex = 8;
+            // 
             // FrmInsertarYEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(270, 463);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelCampos);
             this.Name = "FrmInsertarYEditar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmInsertarYEditar_FormClosing);
@@ -291,5 +302,6 @@
         private System.Windows.Forms.TextBox txtCampo8;
         private System.Windows.Forms.TextBox txtCampo9;
         private System.Windows.Forms.TextBox txtCampo6;
+        private System.Windows.Forms.Panel panel1;
     }
 }

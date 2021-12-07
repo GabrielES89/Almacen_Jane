@@ -50,7 +50,7 @@ namespace Almacen_Jane_Software
                 switch (Query)
                 {
                     case 0:
-                        Comandos = "SELECT nombres, apellido_p, apellido_m, telefono, correo, direccion, puesto, status, matricula FROM `tb_empleados`";
+                        Comandos = "SELECT T_E.nombres, T_E.apellido_p, T_E.apellido_m, T_E.telefono, T_E.correo, T_E.direccion, T_E.puesto, T_S_E.status_empleado, T_E.matricula FROM `tb_empleados` as T_E INNER JOIN tb_status_empleado as T_S_E on T_E.status = T_S_E.id_status_empleado ";
                         break;
                     case 1:
                         Comandos = "SELECT nombre, descripcion, cantidad FROM `tb_productos`";
