@@ -51,26 +51,26 @@ namespace Almacen_Jane_Software
         }
         public void Consltar()
         {
-            TablaAuxiiar = ClaseModulos.Consultas(x);
-            DataTable TablaAux2 = new DataTable();
-            TablaAux2 = TablaAuxiiar.Copy();
-            TablaAux2.Columns.Remove("Identificador");
+            //TablaAuxiiar = ClaseModulos.Consultas(x);
+            //DataTable TablaAux2 = new DataTable();
+            //TablaAux2 = TablaAuxiiar.Copy();
+            //TablaAux2.Columns.Remove("Identificador");
             this.Invoke(new Action(() => dataGridView1.Visible = true));
             switch (x)
             {
                 case 0:
                     //this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
-                    //TablaAuxiiar = ClaseModulos.Consultas(x);
-                    //TablaAux2 = new DataTable();
-                    //TablaAux2 = TablaAuxiiar.Copy();
-                    //TablaAux2.Columns.Remove("Identificador");
+                    TablaAuxiiar = ClaseModulos.Consultas(x);
+                    DataTable TablaAux2 = new DataTable();
+                    TablaAux2 = TablaAuxiiar.Copy();
+                    TablaAux2.Columns.Remove("Identificador");
                     this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 1:
-                    //TablaAuxiiar = ClaseModulos.Consultas(x);
-                    //TablaAux2 = new DataTable();
-                    //TablaAux2 = TablaAuxiiar.Copy();
-                    //TablaAux2.Columns.Remove("Identificador");
+                    TablaAuxiiar = ClaseModulos.Consultas(x);
+                    TablaAux2 = new DataTable();
+                    TablaAux2 = TablaAuxiiar.Copy();
+                    TablaAux2.Columns.Remove("Identificador");
                     this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 2:
