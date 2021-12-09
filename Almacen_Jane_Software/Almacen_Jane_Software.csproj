@@ -59,10 +59,10 @@
     <Compile Include="Formas\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formas\FrmIniciarSesion.cs">
+    <Compile Include="FrmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas\FrmIniciarSesion.Designer.cs">
+    <Compile Include="FrmIniciarSesion.Designer.cs">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formas\FrmCambiarContraseña.cs">
@@ -77,10 +77,10 @@
     <Compile Include="Formas\FrmInsertarYEditar.Designer.cs">
       <DependentUpon>FrmInsertarYEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formas\FrmMenu.cs">
+    <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas\FrmMenu.Designer.cs">
+    <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Formas\FrmRegistrarse.cs">
@@ -100,7 +100,7 @@
     <EmbeddedResource Include="Formas\FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formas\FrmIniciarSesion.resx">
+    <EmbeddedResource Include="FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\FrmCambiarContraseña.resx">
@@ -109,7 +109,7 @@
     <EmbeddedResource Include="Formas\FrmInsertarYEditar.resx">
       <DependentUpon>FrmInsertarYEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formas\FrmMenu.resx">
+    <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\FrmRegistrarse.resx">
