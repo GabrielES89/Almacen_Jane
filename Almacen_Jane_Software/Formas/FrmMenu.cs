@@ -103,7 +103,7 @@ namespace Almacen_Jane_Software
                 default:
                     break;
             }
-            this.Invoke(new Action(() => dataGridView1.Columns["Editar"].DisplayIndex = dataGridView1.Columns.Count - 1));
+            //this.Invoke(new Action(() => dataGridView1.Columns["Editar"].DisplayIndex = dataGridView1.Columns.Count - 1));
         }
 
         private void btnDInsertar_Click(object sender, EventArgs e)
