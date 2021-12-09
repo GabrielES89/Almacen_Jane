@@ -51,19 +51,27 @@ namespace Almacen_Jane_Software
         }
         public void Consltar()
         {
+            TablaAuxiiar = ClaseModulos.Consultas(x);
+            DataTable TablaAux2 = new DataTable();
+            TablaAux2 = TablaAuxiiar.Copy();
+            TablaAux2.Columns.Remove("Identificador");
             this.Invoke(new Action(() => dataGridView1.Visible = true));
             switch (x)
             {
                 case 0:
                     //this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
-                    TablaAuxiiar = ClaseModulos.Consultas(x);
-                    DataTable TablaAux2 = new DataTable();
-                    TablaAux2 = TablaAuxiiar.Copy();
-                    TablaAux2.Columns.Remove("Identificador");
+                    //TablaAuxiiar = ClaseModulos.Consultas(x);
+                    //TablaAux2 = new DataTable();
+                    //TablaAux2 = TablaAuxiiar.Copy();
+                    //TablaAux2.Columns.Remove("Identificador");
                     this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 1:
-                    this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
+                    //TablaAuxiiar = ClaseModulos.Consultas(x);
+                    //TablaAux2 = new DataTable();
+                    //TablaAux2 = TablaAuxiiar.Copy();
+                    //TablaAux2.Columns.Remove("Identificador");
+                    this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 2:
                     this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
@@ -78,6 +86,9 @@ namespace Almacen_Jane_Software
                     this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
                     break;
                 case 6:
+                    this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
+                    break;
+                case 7:
                     this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
                     break;
                 case 8:
@@ -97,7 +108,7 @@ namespace Almacen_Jane_Software
 
         private void btnDInsertar_Click(object sender, EventArgs e)
         {
-            
+            Llamar(0, -1);
         }
 
         private void btnDEditar_Click(object sender, EventArgs e)
@@ -108,49 +119,49 @@ namespace Almacen_Jane_Software
 
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
-            x = 5;
+            x = 4;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
 
         private void btnEntradas_Click(object sender, EventArgs e)
         {
-            x = 3;
+            x = 2;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
 
         private void btnSalida_Click(object sender, EventArgs e)
         {
-            x = 4;
+            x = 3;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
 
         private void btnBitacoras_Click(object sender, EventArgs e)
         {
-            x = 6;
+            x = 5;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            x = 8;
+            x = 7;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            x = 9;
+            x = 8;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            x = 10;
+            x = 9;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
@@ -165,14 +176,14 @@ namespace Almacen_Jane_Software
             {
                 if (e.RowIndex == i && e.ColumnIndex == 0)
                 {
-                    Llamar(1);
+                    Llamar(1, i);
                     break;
                 }
             }
         }
-        public void Llamar(int y)
+        public void Llamar(int y, int Fila)
         {
-            FrmInsertarYEditar ObjVentanaIYE = new FrmInsertarYEditar(x, y);
+            FrmInsertarYEditar ObjVentanaIYE = new FrmInsertarYEditar(x, y, TablaAuxiiar, Fila);
             ObjVentanaIYE.Abrir = Abriri;
             ObjVentanaIYE.Show();
             this.Enabled = false;
@@ -180,7 +191,9 @@ namespace Almacen_Jane_Software
 
         private void btnProcesoAlmacen_Click(object sender, EventArgs e)
         {
-
+            x = 6;
+            Thread Hilo = new Thread(Consltar);
+            Hilo.Start();
         }
     }
 }
