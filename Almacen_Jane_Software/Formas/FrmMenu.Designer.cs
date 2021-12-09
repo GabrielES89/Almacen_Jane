@@ -120,6 +120,7 @@
             this.btnProcesoAlmacen.TabIndex = 6;
             this.btnProcesoAlmacen.Text = "Procesos";
             this.btnProcesoAlmacen.UseVisualStyleBackColor = true;
+            this.btnProcesoAlmacen.Click += new System.EventHandler(this.btnProcesoAlmacen_Click);
             // 
             // lblLogo
             // 

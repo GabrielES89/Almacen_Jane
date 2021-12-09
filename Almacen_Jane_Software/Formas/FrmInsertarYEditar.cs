@@ -30,6 +30,9 @@ namespace Almacen_Jane_Software
                 case 1:
                     Cambios(x, y);
                     break;
+                case 3:
+                    Cambios(x, y);
+                    break;
                 default:
                     break;
             }
@@ -163,8 +166,57 @@ namespace Almacen_Jane_Software
                     }
                     break;
                 case 3:
+                    switch (Mod0Ins)
+                    {
+                        case 0:
+                            lblCampo1.Text = "Producto";
+                            lblCampo1.Visible = true;
+                            txtCampo1.Visible = true;
+                            lblCampo2.Text = "Cantidad";
+                            lblCampo2.Visible = true;
+                            txtCampo2.Visible = true;
+                            lblCampo3.Text = "Fecha";
+                            lblCampo3.Visible = true;
+                            txtCampo3.Visible = true;
+                            lblCampo4.Text = "Empleado";
+                            lblCampo4.Visible = true;
+                            txtCampo4.Visible = true;
+                            lblCampo5.Text = "Proveedor";
+                            lblCampo5.Visible = true;
+                            txtCampo5.Visible = true;
+                            break;
+                        case 1:
+                            lblCampo1.Text = "Identificador";
+                            lblCampo1.Visible = true;
+                            txtCampo1.Visible = true;
+                            lblCampo2.Text = "Producto";
+                            lblCampo2.Visible = true;
+                            txtCampo2.Visible = true;
+                            lblCampo3.Text = "Cantidad";
+                            lblCampo3.Visible = true;
+                            txtCampo3.Visible = true;
+                            lblCampo4.Text = "Fecha";
+                            lblCampo4.Visible = true;
+                            txtCampo4.Visible = true;
+                            lblCampo5.Text = "Empleado";
+                            lblCampo5.Visible = true;
+                            txtCampo5.Visible = true;
+                            lblCampo6.Text = "Proveedor";
+                            lblCampo6.Visible = true;
+                            txtCampo6.Visible = true;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
                     break;
             }
+        }
+
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void FrmInsertarYEditar_FormClosing(object sender, FormClosingEventArgs e)

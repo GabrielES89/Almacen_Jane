@@ -14,6 +14,7 @@ namespace Almacen_Jane_Software
     public partial class FrmMenu : Form
     {
         ClsModulos ClaseModulos = new ClsModulos();
+        DataTable TablaAuxiiar;
         int x = 0;
         public FrmMenu()
         {
@@ -54,7 +55,12 @@ namespace Almacen_Jane_Software
             switch (x)
             {
                 case 0:
-                    this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
+                    //this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
+                    TablaAuxiiar = ClaseModulos.Consultas(x);
+                    DataTable TablaAux2 = new DataTable();
+                    TablaAux2 = TablaAuxiiar.Copy();
+                    TablaAux2.Columns.Remove("Identificador");
+                    this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 1:
                     this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
@@ -160,6 +166,7 @@ namespace Almacen_Jane_Software
                 if (e.RowIndex == i && e.ColumnIndex == 0)
                 {
                     Llamar(1);
+                    break;
                 }
             }
         }
@@ -169,6 +176,11 @@ namespace Almacen_Jane_Software
             ObjVentanaIYE.Abrir = Abriri;
             ObjVentanaIYE.Show();
             this.Enabled = false;
+        }
+
+        private void btnProcesoAlmacen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
