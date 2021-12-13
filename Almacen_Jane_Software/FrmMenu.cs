@@ -183,7 +183,7 @@ namespace Almacen_Jane_Software
         }
         public void Llamar(int y, int Fila)
         {
-            FrmInsertarYEditar ObjVentanaIYE = new FrmInsertarYEditar(x, y, TablaAuxiiar, Fila);
+            Formas_Generales.FrmInsertarYEditar ObjVentanaIYE = new Formas_Generales.FrmInsertarYEditar(x, y, TablaAuxiiar, Fila);
             ObjVentanaIYE.Abrir = Abriri;
             ObjVentanaIYE.Show();
             this.Enabled = false;

@@ -95,7 +95,7 @@ namespace Almacen_Jane_Software
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmRegistrarse ObjRegistrarse = new FrmRegistrarse(this);
+            Usuarios.FrmRegistrarse ObjRegistrarse = new Usuarios.FrmRegistrarse(this);
             ObjRegistrarse.Show();
             this.Hide();
         }
@@ -143,7 +143,7 @@ namespace Almacen_Jane_Software
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmRestablecerContraseña VenRestablecer = new FrmRestablecerContraseña(this);
+            Usuarios.FrmRestablecerContraseña VenRestablecer = new Usuarios.FrmRestablecerContraseña(this);
             VenRestablecer.Show();
             this.Hide();
         }
