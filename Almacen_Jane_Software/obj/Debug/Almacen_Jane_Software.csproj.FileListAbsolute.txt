@@ -97,3 +97,8 @@ C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.CopyComplete
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.exe
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.pdb
+C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Facturas.FrmFactura.resources
+C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmCambiarContraseña.resources
+C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Formas_Generales.FrmInsertarYEditar.resources
+C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmRegistrarse.resources
+C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmRestablecerContraseña.resources
