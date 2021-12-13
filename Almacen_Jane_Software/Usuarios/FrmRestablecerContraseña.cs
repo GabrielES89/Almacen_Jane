@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace Almacen_Jane_Software
+namespace Almacen_Jane_Software.Usuarios
 {
     public partial class FrmRestablecerContraseña : Form
     {

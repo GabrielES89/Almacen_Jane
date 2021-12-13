@@ -1,4 +1,4 @@
-﻿namespace Almacen_Jane_Software
+﻿namespace Almacen_Jane_Software.Formas_Generales
 {
     partial class FrmInsertarYEditar
     {

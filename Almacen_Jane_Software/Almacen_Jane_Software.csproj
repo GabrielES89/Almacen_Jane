@@ -53,10 +53,10 @@
     <Compile Include="Clases\ClsConexion.cs" />
     <Compile Include="Clases\ClsCorreo.cs" />
     <Compile Include="Clases\ClsModulos.cs" />
-    <Compile Include="Formas\FrmFactura.cs">
+    <Compile Include="Facturas\FrmFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas\FrmFactura.Designer.cs">
+    <Compile Include="Facturas\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmIniciarSesion.cs">
@@ -65,16 +65,16 @@
     <Compile Include="FrmIniciarSesion.Designer.cs">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formas\FrmCambiarContraseña.cs">
+    <Compile Include="Usuarios\FrmCambiarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas\FrmCambiarContraseña.Designer.cs">
+    <Compile Include="Usuarios\FrmCambiarContraseña.Designer.cs">
       <DependentUpon>FrmCambiarContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formas\FrmInsertarYEditar.cs">
+    <Compile Include="Formas_Generales\FrmInsertarYEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas\FrmInsertarYEditar.Designer.cs">
+    <Compile Include="Formas_Generales\FrmInsertarYEditar.Designer.cs">
       <DependentUpon>FrmInsertarYEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenu.cs">
@@ -83,39 +83,39 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formas\FrmRegistrarse.cs">
+    <Compile Include="Usuarios\FrmRegistrarse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas\FrmRegistrarse.Designer.cs">
+    <Compile Include="Usuarios\FrmRegistrarse.Designer.cs">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formas\FrmRestablecerContraseña.cs">
+    <Compile Include="Usuarios\FrmRestablecerContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas\FrmRestablecerContraseña.Designer.cs">
+    <Compile Include="Usuarios\FrmRestablecerContraseña.Designer.cs">
       <DependentUpon>FrmRestablecerContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formas\FrmFactura.resx">
+    <EmbeddedResource Include="Facturas\FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formas\FrmCambiarContraseña.resx">
+    <EmbeddedResource Include="Usuarios\FrmCambiarContraseña.resx">
       <DependentUpon>FrmCambiarContraseña.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formas\FrmInsertarYEditar.resx">
+    <EmbeddedResource Include="Formas_Generales\FrmInsertarYEditar.resx">
       <DependentUpon>FrmInsertarYEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formas\FrmRegistrarse.resx">
+    <EmbeddedResource Include="Usuarios\FrmRegistrarse.resx">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formas\FrmRestablecerContraseña.resx">
+    <EmbeddedResource Include="Usuarios\FrmRestablecerContraseña.resx">
       <DependentUpon>FrmRestablecerContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

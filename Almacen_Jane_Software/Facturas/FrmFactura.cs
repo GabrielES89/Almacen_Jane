@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Almacen_Jane_Software
+namespace Almacen_Jane_Software.Facturas
 {
     public partial class FrmFactura : Form
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Almacen_Jane_Software
+namespace Almacen_Jane_Software.Formas_Generales
 {
     public partial class FrmInsertarYEditar : Form
     {
@@ -21,6 +21,10 @@ namespace Almacen_Jane_Software
             this.y = y;
             this.Tabla = Tabla;
             this.Fila = Fila;
+        }
+        public FrmInsertarYEditar()
+        {
+            InitializeComponent();
         }
         public Action Abrir;
         private void FrmInsertarYEditar_Load(object sender, EventArgs e)

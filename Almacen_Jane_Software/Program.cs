@@ -16,7 +16,7 @@ namespace Almacen_Jane_Software
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMenu());
+            Application.Run(new FrmInicio());
         }
     }
 }
