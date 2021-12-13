@@ -14,7 +14,7 @@ namespace Almacen_Jane_Software.Usuarios
     public partial class FrmRestablecerContraseña : Form
     {
         FrmInicio Inicio;
-        ClsModulos Modulos = new ClsModulos();
+        Clases.ClsModulos Modulos = new Clases.ClsModulos();
         int Id_Empleado, x = 0;
         public FrmRestablecerContraseña(FrmInicio Inicio)
         {
@@ -29,7 +29,7 @@ namespace Almacen_Jane_Software.Usuarios
         }
         public void Correo()
         {
-            ClsCorreo ObjCorreo = new ClsCorreo();
+            Clases.ClsCorreo ObjCorreo = new Clases.ClsCorreo();
             this.Invoke(new Action(() => MessageBox.Show(ObjCorreo.MandarCorreo(txtMatricula.Text))));
             FrmCambiarContraseña VentanaCambiarContra = new FrmCambiarContraseña(Inicio, Id_Empleado);
             this.Invoke(new Action(() => VentanaCambiarContra.Show()));

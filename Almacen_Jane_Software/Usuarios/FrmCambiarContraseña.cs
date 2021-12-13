@@ -13,7 +13,7 @@ namespace Almacen_Jane_Software.Usuarios
 {
     public partial class FrmCambiarContraseña : Form
     {
-        ClsCorreo ClaseCorreos = new ClsCorreo();
+        Clases.ClsCorreo ClaseCorreos = new Clases.ClsCorreo();
         FrmInicio Inicio;
         int Id_Empleado;
         public FrmCambiarContraseña(FrmInicio Inicio, int Id_Empleado)

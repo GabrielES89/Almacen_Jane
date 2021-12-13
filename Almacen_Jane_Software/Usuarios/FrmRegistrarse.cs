@@ -14,7 +14,7 @@ namespace Almacen_Jane_Software.Usuarios
     public partial class FrmRegistrarse : Form
     {
         FrmInicio Inicio;
-        ClsModulos Modulos = new ClsModulos();
+        Clases.ClsModulos Modulos = new Clases.ClsModulos();
         int Id_Empleado;
         public FrmRegistrarse(FrmInicio Inicio)
         {

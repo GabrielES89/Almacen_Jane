@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace Almacen_Jane_Software
+namespace Almacen_Jane_Software.Clases
 {
     class ClsCorreo:ClsConexion
     {

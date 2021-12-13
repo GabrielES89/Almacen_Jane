@@ -20,7 +20,7 @@ namespace Almacen_Jane_Software.Facturas
         string Parte = "";
         string Cantidad = "";
         string P_Unitario = "";
-        ClsModulos ObjModulos = new ClsModulos();
+        Clases.ClsModulos ObjModulos = new Clases.ClsModulos();
         DataTable Tabla_Proveedor = new DataTable();
         DataTable Tabla_Nombre = new DataTable();
         public FrmFactura()

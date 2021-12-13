@@ -13,7 +13,7 @@ namespace Almacen_Jane_Software
 {
     public partial class FrmMenu : Form
     {
-        ClsModulos ClaseModulos = new ClsModulos();
+        Clases.ClsModulos ClaseModulos = new Clases.ClsModulos();
         DataTable TablaAuxiiar;
         int x = 0;
         public FrmMenu()

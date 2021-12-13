@@ -62,7 +62,7 @@ namespace Almacen_Jane_Software
             Thread HiloSesion = new Thread(Inicio);
             HiloSesion.Start();
         }
-        ClsModulos ObjModulo = new ClsModulos();
+        Clases.ClsModulos ObjModulo = new Clases.ClsModulos();
         public void Inicio()
         {
             //this.Invoke(new Action(() => dataGridView1.DataSource = ObjModulo.Consultar("Helmer")));

@@ -65,7 +65,7 @@ namespace Almacen_Jane_Software.Formas_Generales
                     break;
             }
         }
-        ClsModulos ObjModulos = new ClsModulos();
+        Clases.ClsModulos ObjModulos = new Clases.ClsModulos();
         public void Cambios(int Aux, int Mod0Ins)
         {
             lblCampo1.Visible = false;
