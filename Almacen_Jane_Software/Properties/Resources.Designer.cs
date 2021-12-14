@@ -93,6 +93,16 @@ namespace Almacen_Jane_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Borrar {
+            get {
+                object obj = ResourceManager.GetObject("Borrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura {
             get {
                 object obj = ResourceManager.GetObject("Captura", resourceCulture);
@@ -126,6 +136,16 @@ namespace Almacen_Jane_Software.Properties {
         internal static System.Drawing.Bitmap Editar1 {
             get {
                 object obj = ResourceManager.GetObject("Editar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Editar345 {
+            get {
+                object obj = ResourceManager.GetObject("Editar345", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

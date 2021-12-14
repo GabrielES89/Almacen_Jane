@@ -95,6 +95,7 @@ namespace Almacen_Jane_Software
                     break;
             }
             this.Invoke(new Action(() => dataGridView1.Columns["Editar"].DisplayIndex = dataGridView1.Columns.Count - 1));
+            this.Invoke(new Action(() => dataGridView1.Columns["Borrar"].DisplayIndex = dataGridView1.Columns.Count - 1));
         }
 
         private void btnDInsertar_Click(object sender, EventArgs e)
