@@ -42,10 +42,6 @@
             this.btnEntradas = new System.Windows.Forms.Button();
             this.btnAlmacen = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnDInsertar = new System.Windows.Forms.Button();
-            this.PanelDYC = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
@@ -53,184 +49,164 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.PanelMenu.SuspendLayout();
-            this.PanelDYC.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel_superior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pB_Mobile)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // PanelMenu
-            // 
-            this.PanelMenu.BackColor = System.Drawing.Color.Transparent;
+            //
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.PanelMenu.Controls.Add(this.lblLogo);
             this.PanelMenu.Controls.Add(this.btnUsuarios);
             this.PanelMenu.Controls.Add(this.btnClientes);
             this.PanelMenu.Controls.Add(this.btnProveedores);
             this.PanelMenu.Controls.Add(this.btnBitacoras);
             this.PanelMenu.Controls.Add(this.btnProcesoAlmacen);
-            this.PanelMenu.Controls.Add(this.lblLogo);
             this.PanelMenu.Controls.Add(this.btnSalida);
             this.PanelMenu.Controls.Add(this.btnEntradas);
             this.PanelMenu.Controls.Add(this.btnAlmacen);
             this.PanelMenu.Controls.Add(this.button2);
             this.PanelMenu.Controls.Add(this.button1);
-            this.PanelMenu.Location = new System.Drawing.Point(6, 12);
+            this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(130, 556);
+            this.PanelMenu.Size = new System.Drawing.Size(184, 580);
             this.PanelMenu.TabIndex = 0;
-            // 
+            this.PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenu_Paint);
+            //
             // btnUsuarios
-            // 
-            this.btnUsuarios.Location = new System.Drawing.Point(23, 339);
+            //
+            this.btnUsuarios.BackColor = System.Drawing.Color.White;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Location = new System.Drawing.Point(28, 449);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(75, 23);
+            this.btnUsuarios.Size = new System.Drawing.Size(126, 27);
             this.btnUsuarios.TabIndex = 10;
             this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
-            // 
+            //
             // btnClientes
-            // 
-            this.btnClientes.Location = new System.Drawing.Point(23, 310);
+            //
+            this.btnClientes.BackColor = System.Drawing.Color.White;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Location = new System.Drawing.Point(28, 415);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnClientes.Size = new System.Drawing.Size(126, 27);
             this.btnClientes.TabIndex = 9;
             this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.UseVisualStyleBackColor = false;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
+            //
             // btnProveedores
-            // 
-            this.btnProveedores.Location = new System.Drawing.Point(23, 281);
+            //
+            this.btnProveedores.BackColor = System.Drawing.Color.White;
+            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedores.Location = new System.Drawing.Point(28, 381);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(75, 23);
+            this.btnProveedores.Size = new System.Drawing.Size(126, 27);
             this.btnProveedores.TabIndex = 8;
             this.btnProveedores.Text = "Proveedores";
-            this.btnProveedores.UseVisualStyleBackColor = true;
+            this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
-            // 
+            //
             // btnBitacoras
-            // 
-            this.btnBitacoras.Location = new System.Drawing.Point(23, 223);
+            //
+            this.btnBitacoras.BackColor = System.Drawing.Color.White;
+            this.btnBitacoras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBitacoras.Location = new System.Drawing.Point(28, 313);
             this.btnBitacoras.Name = "btnBitacoras";
-            this.btnBitacoras.Size = new System.Drawing.Size(75, 23);
+            this.btnBitacoras.Size = new System.Drawing.Size(126, 27);
             this.btnBitacoras.TabIndex = 7;
             this.btnBitacoras.Text = "Bitacoras";
-            this.btnBitacoras.UseVisualStyleBackColor = true;
+            this.btnBitacoras.UseVisualStyleBackColor = false;
             this.btnBitacoras.Click += new System.EventHandler(this.btnBitacoras_Click);
-            // 
+            //
             // btnProcesoAlmacen
-            // 
-            this.btnProcesoAlmacen.Location = new System.Drawing.Point(23, 252);
+            //
+            this.btnProcesoAlmacen.BackColor = System.Drawing.Color.White;
+            this.btnProcesoAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcesoAlmacen.Location = new System.Drawing.Point(28, 347);
             this.btnProcesoAlmacen.Name = "btnProcesoAlmacen";
-            this.btnProcesoAlmacen.Size = new System.Drawing.Size(75, 23);
+            this.btnProcesoAlmacen.Size = new System.Drawing.Size(126, 27);
             this.btnProcesoAlmacen.TabIndex = 6;
             this.btnProcesoAlmacen.Text = "Procesos";
-            this.btnProcesoAlmacen.UseVisualStyleBackColor = true;
+            this.btnProcesoAlmacen.UseVisualStyleBackColor = false;
             this.btnProcesoAlmacen.Click += new System.EventHandler(this.btnProcesoAlmacen_Click);
-            // 
+            //
             // lblLogo
-            // 
+            //
             this.lblLogo.AutoSize = true;
             this.lblLogo.BackColor = System.Drawing.Color.Transparent;
             this.lblLogo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogo.Location = new System.Drawing.Point(4, 29);
+            this.lblLogo.Location = new System.Drawing.Point(31, 48);
             this.lblLogo.Name = "lblLogo";
             this.lblLogo.Size = new System.Drawing.Size(123, 19);
             this.lblLogo.TabIndex = 5;
             this.lblLogo.Text = "Jane Software";
-            // 
+            //
             // btnSalida
-            // 
-            this.btnSalida.Location = new System.Drawing.Point(23, 166);
+            //
+            this.btnSalida.BackColor = System.Drawing.Color.White;
+            this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalida.Location = new System.Drawing.Point(28, 246);
             this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Size = new System.Drawing.Size(75, 23);
+            this.btnSalida.Size = new System.Drawing.Size(126, 27);
             this.btnSalida.TabIndex = 4;
             this.btnSalida.Text = "Salidas";
-            this.btnSalida.UseVisualStyleBackColor = true;
+            this.btnSalida.UseVisualStyleBackColor = false;
             this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
-            // 
+            //
             // btnEntradas
-            // 
-            this.btnEntradas.Location = new System.Drawing.Point(23, 137);
+            //
+            this.btnEntradas.BackColor = System.Drawing.Color.White;
+            this.btnEntradas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntradas.Location = new System.Drawing.Point(28, 212);
             this.btnEntradas.Name = "btnEntradas";
-            this.btnEntradas.Size = new System.Drawing.Size(75, 23);
+            this.btnEntradas.Size = new System.Drawing.Size(126, 27);
             this.btnEntradas.TabIndex = 3;
             this.btnEntradas.Text = "Entradas";
-            this.btnEntradas.UseVisualStyleBackColor = true;
+            this.btnEntradas.UseVisualStyleBackColor = false;
             this.btnEntradas.Click += new System.EventHandler(this.btnEntradas_Click);
-            // 
+            //
             // btnAlmacen
-            // 
-            this.btnAlmacen.Location = new System.Drawing.Point(23, 194);
+            //
+            this.btnAlmacen.BackColor = System.Drawing.Color.White;
+            this.btnAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlmacen.Location = new System.Drawing.Point(28, 279);
             this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(75, 23);
+            this.btnAlmacen.Size = new System.Drawing.Size(126, 27);
             this.btnAlmacen.TabIndex = 2;
             this.btnAlmacen.Text = "Almacen";
-            this.btnAlmacen.UseVisualStyleBackColor = true;
+            this.btnAlmacen.UseVisualStyleBackColor = false;
             this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
-            // 
+            //
             // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(23, 108);
+            //
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(28, 178);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(126, 27);
             this.button2.TabIndex = 1;
             this.button2.Text = "Productos";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(23, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Empleados";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Maroon;
-            this.panel2.Location = new System.Drawing.Point(5, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(858, 20);
-            this.panel2.TabIndex = 6;
-            // 
-            // btnDInsertar
-            // 
-            this.btnDInsertar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDInsertar.Location = new System.Drawing.Point(781, 69);
-            this.btnDInsertar.Name = "btnDInsertar";
-            this.btnDInsertar.Size = new System.Drawing.Size(75, 23);
-            this.btnDInsertar.TabIndex = 27;
-            this.btnDInsertar.Text = "Insertar";
-            this.btnDInsertar.UseVisualStyleBackColor = true;
-            this.btnDInsertar.Click += new System.EventHandler(this.btnDInsertar_Click);
-            // 
-            // PanelDYC
-            // 
-            this.PanelDYC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelDYC.Controls.Add(this.panel5);
-            this.PanelDYC.Location = new System.Drawing.Point(151, 104);
-            this.PanelDYC.Name = "PanelDYC";
-            this.PanelDYC.Size = new System.Drawing.Size(705, 464);
-            this.PanelDYC.TabIndex = 30;
-            // 
+            //
             // panel5
-            // 
+            //
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.dataGridView1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Location = new System.Drawing.Point(184, 120);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(705, 464);
+            this.panel5.Size = new System.Drawing.Size(684, 460);
             this.panel5.TabIndex = 7;
-            // 
+            //
             // dataGridView1
-            // 
+            //
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Cyan;
@@ -257,54 +233,54 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(20);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(705, 464);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
+            //
             // Editar
-            // 
+            //
             this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Editar.HeaderText = "";
             this.Editar.Image = global::Almacen_Jane_Software.Properties.Resources.Editar345;
             this.Editar.Name = "Editar";
             this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Editar.Width = 5;
-            // 
+            //
             // Borrar
-            // 
+            //
             this.Borrar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Borrar.HeaderText = "";
             this.Borrar.Image = global::Almacen_Jane_Software.Properties.Resources.Borrar;
             this.Borrar.Name = "Borrar";
             this.Borrar.Width = 5;
-            // 
+            //
             // dataGridViewImageColumn1
-            // 
+            //
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn1.HeaderText = "";
             this.dataGridViewImageColumn1.Image = global::Almacen_Jane_Software.Properties.Resources.Editar1;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
+            //
             // dataGridViewImageColumn2
-            // 
+            //
             this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn2.HeaderText = "";
             this.dataGridViewImageColumn2.Image = global::Almacen_Jane_Software.Properties.Resources.Borrar;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            // 
+            //
             // FrmMenu
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 580);
-            this.Controls.Add(this.PanelDYC);
-            this.Controls.Add(this.btnDInsertar);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel_superior);
             this.Controls.Add(this.PanelMenu);
-            this.Controls.Add(this.panel2);
             this.Name = "FrmMenu";
             this.Text = "FrmMenu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMenu_FormClosed);
@@ -312,9 +288,11 @@
             this.Leave += new System.EventHandler(this.FrmMenu_Leave);
             this.PanelMenu.ResumeLayout(false);
             this.PanelMenu.PerformLayout();
-            this.PanelDYC.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel_superior.ResumeLayout(false);
+            this.panel_superior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pB_Mobile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,9 +306,6 @@
         private System.Windows.Forms.Button btnEntradas;
         private System.Windows.Forms.Button btnAlmacen;
         private System.Windows.Forms.Label lblLogo;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnDInsertar;
-        private System.Windows.Forms.Panel PanelDYC;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnUsuarios;

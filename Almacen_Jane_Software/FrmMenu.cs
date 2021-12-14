@@ -59,6 +59,7 @@ namespace Almacen_Jane_Software
             switch (x)
             {
                 case 0:
+                    
                     this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 1:
@@ -188,6 +189,23 @@ namespace Almacen_Jane_Software
             x = 6;
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
+        }
+
+        private void pB_Mobile_Click(object sender, EventArgs e)
+        {
+            if (PanelMenu.Visible == true)
+            {
+                PanelMenu.Visible = false;
+            }
+            else
+            {
+                PanelMenu.Visible = true;
+            }
+        }
+
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
