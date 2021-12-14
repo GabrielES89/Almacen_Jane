@@ -188,5 +188,17 @@ namespace Almacen_Jane_Software
             Thread Hilo = new Thread(Consltar);
             Hilo.Start();
         }
+
+        private void pB_Mobile_Click(object sender, EventArgs e)
+        {
+            if (PanelMenu.Visible == true)
+            {
+                PanelMenu.Visible = false;
+            }
+            else
+            {
+                PanelMenu.Visible = true;
+            }
+        }
     }
 }

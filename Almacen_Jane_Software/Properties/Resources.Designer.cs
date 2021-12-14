@@ -163,6 +163,26 @@ namespace Almacen_Jane_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mobile {
+            get {
+                object obj = ResourceManager.GetObject("mobile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mobile1 {
+            get {
+                object obj = ResourceManager.GetObject("mobile1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap savetheapplication_guardar_2958 {
             get {
                 object obj = ResourceManager.GetObject("savetheapplication_guardar_2958", resourceCulture);
