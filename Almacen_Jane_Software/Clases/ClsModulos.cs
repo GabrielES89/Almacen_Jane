@@ -56,34 +56,37 @@ namespace Almacen_Jane_Software.Clases
                         Comandos = "SELECT Id_Producto as Identificador, Nombre, Marca, Modelo, Parte, Descripcion, Cantidad FROM `tb_productos`";
                         break;
                     case 2:
-                        Comandos = "SELECT T_Prod.nombre, T_E.cantidad, T_E.fecha, CONCAT(T_Emple.apellido_p, ' ', T_Emple.apellido_m, ' ', T_Emple.nombres) as Empleado, T_Prov.nombre as Proveedor FROM `tb_entrada` as T_E INNER JOIN tb_proveedor as T_Prov ON T_E.id_proveedor = T_Prov.id_proveedor INNER JOIN tb_empleados as T_Emple ON T_E.id_empleado = T_Emple.id_empleado INNER JOIN tb_productos as T_Prod ON T_E.id_producto = T_Prod.id_producto";
+                        Comandos = "SELECT T_E.id_entrada as Identificador, T_Prod.nombre, T_E.cantidad, T_E.fecha, CONCAT(T_Emple.apellido_p, ' ', T_Emple.apellido_m, ' ', T_Emple.nombres) as Empleado, T_Prov.nombre as Proveedor FROM `tb_entrada` as T_E INNER JOIN tb_proveedor as T_Prov ON T_E.id_proveedor = T_Prov.id_proveedor INNER JOIN tb_empleados as T_Emple ON T_E.id_empleado = T_Emple.id_empleado INNER JOIN tb_productos as T_Prod ON T_E.id_producto = T_Prod.id_producto";
                         break;
                     case 3:
-                        Comandos = "SELECT T_Prod.nombre, T_S.cantidad, T_S.fecha, CONCAT(T_Emple.apellido_p, ' ', T_Emple.apellido_m, ' ', T_Emple.nombres) as Empleado FROM `tb_salida` as T_S INNER JOIN tb_empleados as T_Emple ON T_S.id_empleado = T_Emple.id_empleado INNER JOIN tb_productos as T_Prod ON T_S.id_producto = T_Prod.id_producto";
+                        Comandos = "SELECT T_S.id_salida as Identificador, T_Prod.nombre, T_S.cantidad, T_S.fecha, CONCAT(T_Emple.apellido_p, ' ', T_Emple.apellido_m, ' ', T_Emple.nombres) as Empleado FROM `tb_salida` as T_S INNER JOIN tb_empleados as T_Emple ON T_S.id_empleado = T_Emple.id_empleado INNER JOIN tb_productos as T_Prod ON T_S.id_producto = T_Prod.id_producto";
                         break;
                     case 4:
-                        Comandos = "SELECT T_P.nombre, T_A.codigo_scan, T_A.fecha_registro FROM `tb_almacen` as T_A INNER JOIN tb_productos as T_P ON T_A.id_producto = T_P.id_producto";
+                        Comandos = "SELECT T_A.id_almacen as Identificador, T_P.nombre, T_A.codigo_scan, T_A.fecha_registro FROM `tb_almacen` as T_A INNER JOIN tb_productos as T_P ON T_A.id_producto = T_P.id_producto";
                         break;
                     case 5:
-                        Comandos = "SELECT T_P_A.proceso_almacen, T_A.codigo_scan, T_B_A.fecha_bitacora as Fecha, T_E.matricula, T_C.nombre_completo as Cliente, T_B_A.notas FROM `tb_bitacora_almacen` as T_B_A INNER JOIN tb_almacen as T_A ON T_B_A.id_almacen = T_A.id_almacen INNER JOIN tb_proceso_almacen as T_P_A ON T_B_A.id_proceso_almacen = T_P_A.id_proceso_almacen INNER JOIN tb_empleados as T_E ON T_B_A.id_empleado = T_E.id_empleado INNER JOIN tb_clientes as T_C ON T_B_A.id_cliente = T_C.id_cliente";
+                        Comandos = "SELECT T_B_A.id_bitacora_almacen as Identificador, T_P_A.proceso_almacen, T_A.codigo_scan, T_B_A.fecha_bitacora as Fecha, T_E.matricula, T_C.nombre_completo as Cliente, T_B_A.notas FROM `tb_bitacora_almacen` as T_B_A INNER JOIN tb_almacen as T_A ON T_B_A.id_almacen = T_A.id_almacen INNER JOIN tb_proceso_almacen as T_P_A ON T_B_A.id_proceso_almacen = T_P_A.id_proceso_almacen INNER JOIN tb_empleados as T_E ON T_B_A.id_empleado = T_E.id_empleado INNER JOIN tb_clientes as T_C ON T_B_A.id_cliente = T_C.id_cliente";
                         break;
                     case 6:
-                        Comandos = "SELECT proceso_almacen FROM `tb_proceso_almacen`";
+                        Comandos = "SELECT 	id_proceso_almacen as Identificador, proceso_almacen FROM `tb_proceso_almacen`";
                         break;
                     case 7:
-                        Comandos = "SELECT `nombre`, `telefono`, `correo`, `direccion` FROM `tb_proveedor`";
+                        Comandos = "SELECT id_proveedor as Identificador, `nombre`, `telefono`, `correo`, `direccion` FROM `tb_proveedor`";
                         break;
                     case 8:
-                        Comandos = "SELECT `nombre_completo`, `telefono`, `correo_electronico`, `direccion` FROM `tb_clientes`";
+                        Comandos = "SELECT id_cliente as Identificador, `nombre_completo`, `telefono`, `correo_electronico`, `direccion` FROM `tb_clientes`";
                         break;
                     case 9:
-                        Comandos = "SELECT T_E.matricula as Matricula, T_U.nombre as Usuario, T_U.contraseña as Contraseña, T_U.privilegios as Privilegios FROM `tb_usuarios` as T_U INNER JOIN tb_empleados as T_E on T_U.id_empleado = T_E.id_empleado";
+                        Comandos = "SELECT T_U.id_usuario as Identificador, T_E.matricula as Matricula, T_U.nombre as Usuario, T_U.contraseña as Contraseña, T_U.privilegios as Privilegios FROM `tb_usuarios` as T_U INNER JOIN tb_empleados as T_E on T_U.id_empleado = T_E.id_empleado";
                         break;
                     case 10:
                         Comandos = "SELECT T_P.Nombre, T_A.Codigo_Scan, T_A.Fecha_Registro FROM `tb_almacen` as T_A INNER JOIN tb_productos as T_P ON T_A.id_producto = T_P.id_producto";
                         break;
                     case 11:
-                        Comandos = "SELECT status_empleado FROM `tb_status_empleado`";
+                        Comandos = "SELECT * FROM `tb_status_empleado`";
+                        break;
+                    case 12:
+                        Comandos = "SELECT id_empleado, CONCAT(apellido_p, ' ', apellido_m, ' ', nombres) as Empleado FROM tb_empleados GROUP BY CONCAT(apellido_p, ' ', apellido_m, ' ', nombres)";
                         break;
                     default:
                         break;

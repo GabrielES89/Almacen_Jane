@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.PanelCampos = new System.Windows.Forms.Panel();
+            this.dtpCampo4 = new System.Windows.Forms.DateTimePicker();
+            this.cbCampo9 = new System.Windows.Forms.ComboBox();
             this.lblCampo1 = new System.Windows.Forms.Label();
             this.lblCampo3 = new System.Windows.Forms.Label();
             this.lblCampo10 = new System.Windows.Forms.Label();
@@ -51,12 +53,14 @@
             this.txtCampo9 = new System.Windows.Forms.TextBox();
             this.txtCampo6 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbCampo9 = new System.Windows.Forms.ComboBox();
+            this.cbCampo5 = new System.Windows.Forms.ComboBox();
             this.PanelCampos.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelCampos
             // 
+            this.PanelCampos.Controls.Add(this.cbCampo5);
+            this.PanelCampos.Controls.Add(this.dtpCampo4);
             this.PanelCampos.Controls.Add(this.cbCampo9);
             this.PanelCampos.Controls.Add(this.lblCampo1);
             this.PanelCampos.Controls.Add(this.lblCampo3);
@@ -84,6 +88,22 @@
             this.PanelCampos.Size = new System.Drawing.Size(237, 365);
             this.PanelCampos.TabIndex = 7;
             this.PanelCampos.Visible = false;
+            // 
+            // dtpCampo4
+            // 
+            this.dtpCampo4.Location = new System.Drawing.Point(100, 107);
+            this.dtpCampo4.Name = "dtpCampo4";
+            this.dtpCampo4.Size = new System.Drawing.Size(134, 20);
+            this.dtpCampo4.TabIndex = 58;
+            // 
+            // cbCampo9
+            // 
+            this.cbCampo9.FormattingEnabled = true;
+            this.cbCampo9.ItemHeight = 13;
+            this.cbCampo9.Location = new System.Drawing.Point(100, 257);
+            this.cbCampo9.Name = "cbCampo9";
+            this.cbCampo9.Size = new System.Drawing.Size(134, 21);
+            this.cbCampo9.TabIndex = 8;
             // 
             // lblCampo1
             // 
@@ -145,7 +165,7 @@
             // 
             this.txtCampo2.Location = new System.Drawing.Point(100, 47);
             this.txtCampo2.Name = "txtCampo2";
-            this.txtCampo2.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo2.Size = new System.Drawing.Size(134, 20);
             this.txtCampo2.TabIndex = 1;
             // 
             // lblCampo7
@@ -161,7 +181,7 @@
             // 
             this.txtCampo5.Location = new System.Drawing.Point(100, 137);
             this.txtCampo5.Name = "txtCampo5";
-            this.txtCampo5.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo5.Size = new System.Drawing.Size(134, 20);
             this.txtCampo5.TabIndex = 4;
             // 
             // lblCampo5
@@ -177,7 +197,7 @@
             // 
             this.txtCampo7.Location = new System.Drawing.Point(100, 197);
             this.txtCampo7.Name = "txtCampo7";
-            this.txtCampo7.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo7.Size = new System.Drawing.Size(134, 20);
             this.txtCampo7.TabIndex = 6;
             // 
             // lblCampo6
@@ -193,7 +213,7 @@
             // 
             this.txtCampo10.Location = new System.Drawing.Point(100, 287);
             this.txtCampo10.Name = "txtCampo10";
-            this.txtCampo10.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo10.Size = new System.Drawing.Size(134, 20);
             this.txtCampo10.TabIndex = 9;
             // 
             // lblCampo4
@@ -209,7 +229,7 @@
             // 
             this.txtCampo3.Location = new System.Drawing.Point(100, 77);
             this.txtCampo3.Name = "txtCampo3";
-            this.txtCampo3.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo3.Size = new System.Drawing.Size(134, 20);
             this.txtCampo3.TabIndex = 2;
             // 
             // lblCampo2
@@ -225,35 +245,35 @@
             // 
             this.txtCampo4.Location = new System.Drawing.Point(100, 107);
             this.txtCampo4.Name = "txtCampo4";
-            this.txtCampo4.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo4.Size = new System.Drawing.Size(134, 20);
             this.txtCampo4.TabIndex = 3;
             // 
             // txtCampo1
             // 
             this.txtCampo1.Location = new System.Drawing.Point(100, 17);
             this.txtCampo1.Name = "txtCampo1";
-            this.txtCampo1.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo1.Size = new System.Drawing.Size(134, 20);
             this.txtCampo1.TabIndex = 0;
             // 
             // txtCampo8
             // 
             this.txtCampo8.Location = new System.Drawing.Point(100, 227);
             this.txtCampo8.Name = "txtCampo8";
-            this.txtCampo8.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo8.Size = new System.Drawing.Size(134, 20);
             this.txtCampo8.TabIndex = 7;
             // 
             // txtCampo9
             // 
             this.txtCampo9.Location = new System.Drawing.Point(100, 257);
             this.txtCampo9.Name = "txtCampo9";
-            this.txtCampo9.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo9.Size = new System.Drawing.Size(134, 20);
             this.txtCampo9.TabIndex = 8;
             // 
             // txtCampo6
             // 
             this.txtCampo6.Location = new System.Drawing.Point(100, 167);
             this.txtCampo6.Name = "txtCampo6";
-            this.txtCampo6.Size = new System.Drawing.Size(100, 20);
+            this.txtCampo6.Size = new System.Drawing.Size(134, 20);
             this.txtCampo6.TabIndex = 5;
             // 
             // panel1
@@ -265,14 +285,14 @@
             this.panel1.Size = new System.Drawing.Size(137, 85);
             this.panel1.TabIndex = 8;
             // 
-            // cbCampo9
+            // cbCampo5
             // 
-            this.cbCampo9.FormattingEnabled = true;
-            this.cbCampo9.ItemHeight = 13;
-            this.cbCampo9.Location = new System.Drawing.Point(100, 257);
-            this.cbCampo9.Name = "cbCampo9";
-            this.cbCampo9.Size = new System.Drawing.Size(100, 21);
-            this.cbCampo9.TabIndex = 8;
+            this.cbCampo5.FormattingEnabled = true;
+            this.cbCampo5.ItemHeight = 13;
+            this.cbCampo5.Location = new System.Drawing.Point(100, 137);
+            this.cbCampo5.Name = "cbCampo5";
+            this.cbCampo5.Size = new System.Drawing.Size(134, 21);
+            this.cbCampo5.TabIndex = 59;
             // 
             // FrmInsertarYEditar
             // 
@@ -316,5 +336,7 @@
         private System.Windows.Forms.TextBox txtCampo6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbCampo9;
+        private System.Windows.Forms.DateTimePicker dtpCampo4;
+        private System.Windows.Forms.ComboBox cbCampo5;
     }
 }

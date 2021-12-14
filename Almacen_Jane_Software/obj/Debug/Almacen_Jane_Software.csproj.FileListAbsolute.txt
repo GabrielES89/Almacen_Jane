@@ -53,13 +53,8 @@ D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Dat
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Web.xml
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csprojAssemblyReference.cache
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.exe.config
-D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmFactura.resources
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmInicio.resources
-D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmCambiarContraseña.resources
-D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmInsertarYEditar.resources
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmMenu.resources
-D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmRegistrarse.resources
-D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmRestablecerContraseña.resources
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Properties.Resources.resources
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.GenerateResource.cache
 D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.CoreCompileInputs.cache
@@ -102,3 +97,8 @@ C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Formas_Generales.FrmInsertarYEditar.resources
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmRegistrarse.resources
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmRestablecerContraseña.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Facturas.FrmFactura.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmCambiarContraseña.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Formas_Generales.FrmInsertarYEditar.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmRegistrarse.resources
+D:\Desktop\Trabajo\Github\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Usuarios.FrmRestablecerContraseña.resources
