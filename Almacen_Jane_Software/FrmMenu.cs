@@ -201,5 +201,10 @@ namespace Almacen_Jane_Software
                 PanelMenu.Visible = true;
             }
         }
+
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -133,6 +133,16 @@ namespace Almacen_Jane_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap empleado {
+            get {
+                object obj = ResourceManager.GetObject("empleado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Guardar {
             get {
                 object obj = ResourceManager.GetObject("Guardar", resourceCulture);
