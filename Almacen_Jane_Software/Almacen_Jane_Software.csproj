@@ -59,6 +59,12 @@
     <Compile Include="Facturas\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formas_EYM\frmEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas_EYM\frmEmpleados.Designer.cs">
+      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>

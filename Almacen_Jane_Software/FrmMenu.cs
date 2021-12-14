@@ -51,33 +51,24 @@ namespace Almacen_Jane_Software
         }
         public void Consltar()
         {
-            //TablaAuxiiar = ClaseModulos.Consultas(x);
-            //DataTable TablaAux2 = new DataTable();
-            //TablaAux2 = TablaAuxiiar.Copy();
-            //TablaAux2.Columns.Remove("Identificador");
+            TablaAuxiiar = ClaseModulos.Consultas(x);
+            DataTable TablaAux2 = new DataTable();
+            TablaAux2 = TablaAuxiiar.Copy();
+            TablaAux2.Columns.Remove("Identificador");
             this.Invoke(new Action(() => dataGridView1.Visible = true));
             switch (x)
             {
                 case 0:
-                    //this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
-                    TablaAuxiiar = ClaseModulos.Consultas(x);
-                    DataTable TablaAux2 = new DataTable();
-                    TablaAux2 = TablaAuxiiar.Copy();
-                    TablaAux2.Columns.Remove("Identificador");
                     this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 1:
-                    TablaAuxiiar = ClaseModulos.Consultas(x);
-                    TablaAux2 = new DataTable();
-                    TablaAux2 = TablaAuxiiar.Copy();
-                    TablaAux2.Columns.Remove("Identificador");
                     this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 2:
-                    this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
+                    this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 3:
-                    this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
+                    this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 4:
                     this.Invoke(new Action(() => dataGridView1.DataSource = ClaseModulos.Consultas(x)));
@@ -103,12 +94,14 @@ namespace Almacen_Jane_Software
                 default:
                     break;
             }
-            //this.Invoke(new Action(() => dataGridView1.Columns["Editar"].DisplayIndex = dataGridView1.Columns.Count - 1));
+            this.Invoke(new Action(() => dataGridView1.Columns["Editar"].DisplayIndex = dataGridView1.Columns.Count - 1));
         }
 
         private void btnDInsertar_Click(object sender, EventArgs e)
         {
-            Llamar(0, -1);
+            Formas_EYM.frmEmpleados VentanaEmplados = new Formas_EYM.frmEmpleados();
+            VentanaEmplados.ShowDialog();
+            //Llamar(0, -1);
         }
 
         private void btnDEditar_Click(object sender, EventArgs e)

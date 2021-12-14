@@ -91,6 +91,7 @@ namespace Almacen_Jane_Software.Formas_Generales
             cbCampo9.Visible = false;
             btnInsertar.Visible = true;
             PanelCampos.Visible = true;
+            dtpCampo4.Visible = false;
             if (Mod0Ins == 1)
             {
                 btnInsertar.Text = "Actualizar";
@@ -133,43 +134,43 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Id_Empleado";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
-                            txtCampo1.Text = Tabla.Rows[Fila]["Identificador"].ToString();
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
                             txtCampo1.Enabled = false;
                             lblCampo2.Text = "Nombres";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
-                            txtCampo2.Text = Tabla.Rows[Fila]["Nombres"].ToString();
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Apellido paterno";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
-                            txtCampo3.Text = Tabla.Rows[Fila]["Apellido_paterno"].ToString();
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Apellido materno";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
-                            txtCampo4.Text = Tabla.Rows[Fila]["Apellido_materno"].ToString();
+                            txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
                             lblCampo5.Text = "Telefono";
                             lblCampo5.Visible = true;
                             txtCampo5.Visible = true;
-                            txtCampo5.Text = Tabla.Rows[Fila]["Telefono"].ToString();
+                            txtCampo5.Text = Tabla.Rows[Fila][4].ToString();
                             lblCampo6.Text = "Correo";
                             lblCampo6.Visible = true;
                             txtCampo6.Visible = true;
-                            txtCampo6.Text = Tabla.Rows[Fila]["Correo"].ToString();
+                            txtCampo6.Text = Tabla.Rows[Fila][5].ToString();
                             lblCampo7.Text = "Direccíón";
                             lblCampo7.Visible = true;
                             txtCampo7.Visible = true;
-                            txtCampo7.Text = Tabla.Rows[Fila]["Dirección"].ToString();
+                            txtCampo7.Text = Tabla.Rows[Fila][6].ToString();
                             lblCampo8.Text = "Puesto";
                             lblCampo8.Visible = true;
                             txtCampo8.Visible = true;
-                            txtCampo8.Text = Tabla.Rows[Fila]["Puesto"].ToString();
+                            txtCampo8.Text = Tabla.Rows[Fila][7].ToString();
                             lblCampo9.Text = "Status";
                             lblCampo9.Visible = true;
                             cbCampo9.Visible = true;
                             DataTable TablaStatusEmpleados = ObjModulos.Consultas(11);
                             for (int i = 0; i < TablaStatusEmpleados.Rows.Count; i++)
                             {
-                                cbCampo9.Items.Add(TablaStatusEmpleados.Rows[i][0].ToString());
+                                cbCampo9.Items.Add(TablaStatusEmpleados.Rows[i][1].ToString());
                             }
                             cbCampo9.Text = Tabla.Rows[Fila]["Estatus"].ToString();
                             lblCampo10.Text = "Matricula";
@@ -205,7 +206,7 @@ namespace Almacen_Jane_Software.Formas_Generales
                             txtCampo6.Visible = true;
                             break;
                         case 1:
-                            lblCampo1.Text = "Id_Producto";
+                            lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
                             txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
@@ -214,14 +215,26 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
                             txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
-                            lblCampo3.Text = "Descripción";
+                            lblCampo3.Text = "Marca";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
                             txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
-                            lblCampo4.Text = "Cantidad";
+                            lblCampo4.Text = "Modelo";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
                             txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
+                            lblCampo5.Text = "Parte";
+                            lblCampo5.Visible = true;
+                            txtCampo5.Visible = true;
+                            txtCampo5.Text = Tabla.Rows[Fila][4].ToString();
+                            lblCampo6.Text = "Descripción";
+                            lblCampo6.Visible = true;
+                            txtCampo6.Visible = true;
+                            txtCampo6.Text = Tabla.Rows[Fila][5].ToString();
+                            lblCampo7.Text = "Cantidad";
+                            lblCampo7.Visible = true;
+                            txtCampo7.Visible = true;
+                            txtCampo7.Text = Tabla.Rows[Fila][6].ToString();
                             break;
                         default:
                             break;
@@ -251,21 +264,33 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
+                            txtCampo1.Enabled = false;
                             lblCampo2.Text = "Producto";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Cantidad";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Fecha";
                             lblCampo4.Visible = true;
-                            txtCampo4.Visible = true;
+                            dtpCampo4.Visible = true;
+                            dtpCampo4.Value = DateTime.Parse(Tabla.Rows[Fila][3].ToString());
                             lblCampo5.Text = "Empleado";
                             lblCampo5.Visible = true;
-                            txtCampo5.Visible = true;
+                            cbCampo5.Visible = true;
+                            cbCampo5.Text = Tabla.Rows[Fila][4].ToString();
+                            DataTable TablaEmpleados = ObjModulos.Consultas(12);
+                            for (int i = 0; i < TablaEmpleados.Rows.Count; i++)
+                            {
+                                cbCampo5.Items.Add(TablaEmpleados.Rows[i][1].ToString());
+                            }
                             lblCampo6.Text = "Proveedor";
                             lblCampo6.Visible = true;
                             txtCampo6.Visible = true;
+                            txtCampo6.Text = Tabla.Rows[Fila][5].ToString();
                             break;
                         default:
                             break;
@@ -292,18 +317,24 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
+                            txtCampo1.Enabled = false;
                             lblCampo2.Text = "Producto";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Cantidad";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Fecha";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
+                            txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
                             lblCampo5.Text = "Empleado";
                             lblCampo5.Visible = true;
                             txtCampo5.Visible = true;
+                            txtCampo5.Text = Tabla.Rows[Fila][4].ToString();
                             break;
                         default:
                             break;
@@ -327,15 +358,20 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
+                            txtCampo1.Enabled = false;
                             lblCampo2.Text = "Producto";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Codigo scan";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Fecha";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
+                            txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
                             break;
                     }
                     break;
@@ -366,24 +402,32 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
+                            txtCampo1.Enabled = false;
                             lblCampo2.Text = "Proceso";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Codigo scan";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Fecha";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
+                            txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
                             lblCampo5.Text = "Matricula";
                             lblCampo5.Visible = true;
                             txtCampo5.Visible = true;
+                            txtCampo5.Text = Tabla.Rows[Fila][4].ToString();
                             lblCampo6.Text = "Cliente";
                             lblCampo6.Visible = true;
                             txtCampo6.Visible = true;
+                            txtCampo6.Text = Tabla.Rows[Fila][5].ToString();
                             lblCampo7.Text = "Notas";
                             lblCampo7.Visible = true;
                             txtCampo7.Visible = true;
+                            txtCampo7.Text = Tabla.Rows[Fila][6].ToString();
                             break;
                     }
                     break;
@@ -399,9 +443,11 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
                             lblCampo2.Text = "Proceso";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             break;
                     }
                     break;
@@ -426,18 +472,24 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
+                            txtCampo1.Enabled = false;
                             lblCampo2.Text = "Nombre";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Telefono";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Correo";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
+                            txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
                             lblCampo5.Text = "Dirección";
                             lblCampo5.Visible = true;
                             txtCampo5.Visible = true;
+                            txtCampo5.Text = Tabla.Rows[Fila][4].ToString();
                             break;
                     }
                     break;
@@ -462,18 +514,24 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
+                            txtCampo1.Enabled = false;
                             lblCampo2.Text = "Nombre";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Telefono";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Correo";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
+                            txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
                             lblCampo5.Text = "Dirección";
                             lblCampo5.Visible = true;
                             txtCampo5.Visible = true;
+                            txtCampo5.Text = Tabla.Rows[Fila][4].ToString();
                             break;
                     }
                     break;
@@ -498,18 +556,24 @@ namespace Almacen_Jane_Software.Formas_Generales
                             lblCampo1.Text = "Identificador";
                             lblCampo1.Visible = true;
                             txtCampo1.Visible = true;
+                            txtCampo1.Text = Tabla.Rows[Fila][0].ToString();
+                            txtCampo1.Enabled = false;
                             lblCampo2.Text = "Usuario";
                             lblCampo2.Visible = true;
                             txtCampo2.Visible = true;
+                            txtCampo2.Text = Tabla.Rows[Fila][1].ToString();
                             lblCampo3.Text = "Contraseña";
                             lblCampo3.Visible = true;
                             txtCampo3.Visible = true;
+                            txtCampo3.Text = Tabla.Rows[Fila][2].ToString();
                             lblCampo4.Text = "Privilegios";
                             lblCampo4.Visible = true;
                             txtCampo4.Visible = true;
+                            txtCampo4.Text = Tabla.Rows[Fila][3].ToString();
                             lblCampo5.Text = "Matricula";
                             lblCampo5.Visible = true;
                             txtCampo5.Visible = true;
+                            txtCampo5.Text = Tabla.Rows[Fila][4].ToString();
                             break;
                     }
                     break;
