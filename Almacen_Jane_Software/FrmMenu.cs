@@ -59,6 +59,7 @@ namespace Almacen_Jane_Software
             switch (x)
             {
                 case 0:
+                    
                     this.Invoke(new Action(() => dataGridView1.DataSource = TablaAux2));
                     break;
                 case 1:

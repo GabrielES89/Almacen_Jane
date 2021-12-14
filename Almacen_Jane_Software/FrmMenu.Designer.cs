@@ -44,22 +44,21 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel_fondo = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDInsertar = new System.Windows.Forms.Button();
             this.pB_Mobile = new System.Windows.Forms.PictureBox();
             this.panel_superior = new System.Windows.Forms.Panel();
+            this.lbl_titulo = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel_fondo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pB_Mobile)).BeginInit();
             this.panel_superior.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelMenu
             // 
-            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.PanelMenu.Controls.Add(this.lblLogo);
             this.PanelMenu.Controls.Add(this.btnUsuarios);
             this.PanelMenu.Controls.Add(this.btnClientes);
@@ -74,14 +73,14 @@
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(145, 580);
+            this.PanelMenu.Size = new System.Drawing.Size(184, 580);
             this.PanelMenu.TabIndex = 0;
             // 
             // btnUsuarios
             // 
-            this.btnUsuarios.Location = new System.Drawing.Point(35, 397);
+            this.btnUsuarios.Location = new System.Drawing.Point(31, 395);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(75, 23);
+            this.btnUsuarios.Size = new System.Drawing.Size(126, 27);
             this.btnUsuarios.TabIndex = 10;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
@@ -89,9 +88,9 @@
             // 
             // btnClientes
             // 
-            this.btnClientes.Location = new System.Drawing.Point(35, 368);
+            this.btnClientes.Location = new System.Drawing.Point(31, 366);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(75, 23);
+            this.btnClientes.Size = new System.Drawing.Size(126, 27);
             this.btnClientes.TabIndex = 9;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
@@ -99,9 +98,9 @@
             // 
             // btnProveedores
             // 
-            this.btnProveedores.Location = new System.Drawing.Point(35, 339);
+            this.btnProveedores.Location = new System.Drawing.Point(31, 337);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(75, 23);
+            this.btnProveedores.Size = new System.Drawing.Size(126, 27);
             this.btnProveedores.TabIndex = 8;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
@@ -109,9 +108,9 @@
             // 
             // btnBitacoras
             // 
-            this.btnBitacoras.Location = new System.Drawing.Point(35, 281);
+            this.btnBitacoras.Location = new System.Drawing.Point(31, 279);
             this.btnBitacoras.Name = "btnBitacoras";
-            this.btnBitacoras.Size = new System.Drawing.Size(75, 23);
+            this.btnBitacoras.Size = new System.Drawing.Size(126, 27);
             this.btnBitacoras.TabIndex = 7;
             this.btnBitacoras.Text = "Bitacoras";
             this.btnBitacoras.UseVisualStyleBackColor = true;
@@ -119,9 +118,9 @@
             // 
             // btnProcesoAlmacen
             // 
-            this.btnProcesoAlmacen.Location = new System.Drawing.Point(35, 310);
+            this.btnProcesoAlmacen.Location = new System.Drawing.Point(31, 308);
             this.btnProcesoAlmacen.Name = "btnProcesoAlmacen";
-            this.btnProcesoAlmacen.Size = new System.Drawing.Size(75, 23);
+            this.btnProcesoAlmacen.Size = new System.Drawing.Size(126, 27);
             this.btnProcesoAlmacen.TabIndex = 6;
             this.btnProcesoAlmacen.Text = "Procesos";
             this.btnProcesoAlmacen.UseVisualStyleBackColor = true;
@@ -132,7 +131,7 @@
             this.lblLogo.AutoSize = true;
             this.lblLogo.BackColor = System.Drawing.Color.Transparent;
             this.lblLogo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogo.Location = new System.Drawing.Point(12, 48);
+            this.lblLogo.Location = new System.Drawing.Point(31, 48);
             this.lblLogo.Name = "lblLogo";
             this.lblLogo.Size = new System.Drawing.Size(123, 19);
             this.lblLogo.TabIndex = 5;
@@ -140,9 +139,9 @@
             // 
             // btnSalida
             // 
-            this.btnSalida.Location = new System.Drawing.Point(35, 224);
+            this.btnSalida.Location = new System.Drawing.Point(31, 222);
             this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Size = new System.Drawing.Size(75, 23);
+            this.btnSalida.Size = new System.Drawing.Size(126, 27);
             this.btnSalida.TabIndex = 4;
             this.btnSalida.Text = "Salidas";
             this.btnSalida.UseVisualStyleBackColor = true;
@@ -150,9 +149,9 @@
             // 
             // btnEntradas
             // 
-            this.btnEntradas.Location = new System.Drawing.Point(35, 195);
+            this.btnEntradas.Location = new System.Drawing.Point(31, 193);
             this.btnEntradas.Name = "btnEntradas";
-            this.btnEntradas.Size = new System.Drawing.Size(75, 23);
+            this.btnEntradas.Size = new System.Drawing.Size(126, 27);
             this.btnEntradas.TabIndex = 3;
             this.btnEntradas.Text = "Entradas";
             this.btnEntradas.UseVisualStyleBackColor = true;
@@ -160,9 +159,9 @@
             // 
             // btnAlmacen
             // 
-            this.btnAlmacen.Location = new System.Drawing.Point(35, 252);
+            this.btnAlmacen.Location = new System.Drawing.Point(31, 250);
             this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(75, 23);
+            this.btnAlmacen.Size = new System.Drawing.Size(126, 27);
             this.btnAlmacen.TabIndex = 2;
             this.btnAlmacen.Text = "Almacen";
             this.btnAlmacen.UseVisualStyleBackColor = true;
@@ -170,9 +169,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(35, 166);
+            this.button2.Location = new System.Drawing.Point(31, 164);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(126, 27);
             this.button2.TabIndex = 1;
             this.button2.Text = "Productos";
             this.button2.UseVisualStyleBackColor = true;
@@ -180,9 +179,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 137);
+            this.button1.Location = new System.Drawing.Point(31, 135);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(126, 27);
             this.button1.TabIndex = 0;
             this.button1.Text = "Empleados";
             this.button1.UseVisualStyleBackColor = true;
@@ -190,11 +189,12 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.dataGridView1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Location = new System.Drawing.Point(184, 120);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(723, 580);
+            this.panel5.Size = new System.Drawing.Size(684, 460);
             this.panel5.TabIndex = 7;
             // 
             // dataGridView1
@@ -210,8 +210,9 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(20);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(723, 580);
+            this.dataGridView1.Size = new System.Drawing.Size(684, 460);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -234,30 +235,20 @@
             this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Editar.Width = 5;
             // 
-            // panel_fondo
-            // 
-            this.panel_fondo.Controls.Add(this.panel_superior);
-            this.panel_fondo.Controls.Add(this.panel5);
-            this.panel_fondo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_fondo.Location = new System.Drawing.Point(145, 0);
-            this.panel_fondo.Name = "panel_fondo";
-            this.panel_fondo.Size = new System.Drawing.Size(723, 580);
-            this.panel_fondo.TabIndex = 32;
-            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Maroon;
-            this.panel2.Location = new System.Drawing.Point(6, 12);
+            this.panel2.Location = new System.Drawing.Point(0, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(911, 20);
+            this.panel2.Size = new System.Drawing.Size(684, 20);
             this.panel2.TabIndex = 6;
             // 
             // btnDInsertar
             // 
             this.btnDInsertar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDInsertar.Location = new System.Drawing.Point(636, 75);
+            this.btnDInsertar.Location = new System.Drawing.Point(597, 64);
             this.btnDInsertar.Name = "btnDInsertar";
             this.btnDInsertar.Size = new System.Drawing.Size(75, 23);
             this.btnDInsertar.TabIndex = 27;
@@ -278,21 +269,34 @@
             // 
             // panel_superior
             // 
+            this.panel_superior.BackColor = System.Drawing.Color.White;
+            this.panel_superior.Controls.Add(this.lbl_titulo);
             this.panel_superior.Controls.Add(this.pB_Mobile);
             this.panel_superior.Controls.Add(this.btnDInsertar);
             this.panel_superior.Controls.Add(this.panel2);
             this.panel_superior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_superior.Location = new System.Drawing.Point(0, 0);
+            this.panel_superior.Location = new System.Drawing.Point(184, 0);
             this.panel_superior.Name = "panel_superior";
-            this.panel_superior.Size = new System.Drawing.Size(723, 122);
+            this.panel_superior.Size = new System.Drawing.Size(684, 120);
             this.panel_superior.TabIndex = 32;
+            // 
+            // lbl_titulo
+            // 
+            this.lbl_titulo.AutoSize = true;
+            this.lbl_titulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.Location = new System.Drawing.Point(87, 46);
+            this.lbl_titulo.Name = "lbl_titulo";
+            this.lbl_titulo.Size = new System.Drawing.Size(357, 55);
+            this.lbl_titulo.TabIndex = 32;
+            this.lbl_titulo.Text = "Almacen Jane";
             // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 580);
-            this.Controls.Add(this.panel_fondo);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel_superior);
             this.Controls.Add(this.PanelMenu);
             this.Name = "FrmMenu";
             this.Text = "FrmMenu";
@@ -303,9 +307,9 @@
             this.PanelMenu.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel_fondo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pB_Mobile)).EndInit();
             this.panel_superior.ResumeLayout(false);
+            this.panel_superior.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -328,10 +332,10 @@
         private System.Windows.Forms.Button btnProcesoAlmacen;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn Editar;
-        private System.Windows.Forms.Panel panel_fondo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDInsertar;
         private System.Windows.Forms.PictureBox pB_Mobile;
         private System.Windows.Forms.Panel panel_superior;
+        private System.Windows.Forms.Label lbl_titulo;
     }
 }
