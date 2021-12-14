@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtNoFactura = new System.Windows.Forms.TextBox();
             this.cbProveedor = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.cbNombre = new System.Windows.Forms.ComboBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
@@ -58,7 +59,6 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblIVA = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -98,6 +98,16 @@
             this.cbProveedor.SelectedIndexChanged += new System.EventHandler(this.cbProveedor_SelectedIndexChanged);
             this.cbProveedor.Enter += new System.EventHandler(this.cbProveedor_Enter);
             this.cbProveedor.Leave += new System.EventHandler(this.cbProveedor_Leave);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.BackgroundImage = global::Almacen_Jane_Software.Properties.Resources.aaaaa;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(538, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(158, 104);
+            this.panel1.TabIndex = 0;
             // 
             // cbNombre
             // 
@@ -210,55 +220,56 @@
             this.C_Importe});
             this.dataGridView1.Location = new System.Drawing.Point(0, 198);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(1166, 175);
             this.dataGridView1.TabIndex = 11;
             // 
             // C_Nombre
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.C_Nombre.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.C_Nombre.DefaultCellStyle = dataGridViewCellStyle1;
             this.C_Nombre.HeaderText = "Nombre";
             this.C_Nombre.Name = "C_Nombre";
             // 
             // C_Marca
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.C_Marca.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.C_Marca.DefaultCellStyle = dataGridViewCellStyle2;
             this.C_Marca.HeaderText = "Marca";
             this.C_Marca.Name = "C_Marca";
             // 
             // C_Modelo
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.C_Modelo.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.C_Modelo.DefaultCellStyle = dataGridViewCellStyle3;
             this.C_Modelo.HeaderText = "Modelo";
             this.C_Modelo.Name = "C_Modelo";
             // 
             // C_Parte
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.C_Parte.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.C_Parte.DefaultCellStyle = dataGridViewCellStyle4;
             this.C_Parte.HeaderText = "Parte";
             this.C_Parte.Name = "C_Parte";
             // 
             // C_Cantidad
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.C_Cantidad.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.C_Cantidad.DefaultCellStyle = dataGridViewCellStyle5;
             this.C_Cantidad.HeaderText = "Cantidad";
             this.C_Cantidad.Name = "C_Cantidad";
             // 
             // C_P_Unitario
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.C_P_Unitario.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.C_P_Unitario.DefaultCellStyle = dataGridViewCellStyle6;
             this.C_P_Unitario.HeaderText = "P.Unitario";
             this.C_P_Unitario.Name = "C_P_Unitario";
             // 
             // C_Importe
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.C_Importe.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.C_Importe.DefaultCellStyle = dataGridViewCellStyle7;
             this.C_Importe.HeaderText = "Importe";
             this.C_Importe.Name = "C_Importe";
             // 
@@ -299,16 +310,6 @@
             this.btnGuardar.TabIndex = 15;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.BackgroundImage = global::Almacen_Jane_Software.Properties.Resources.aaaaa;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(538, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(158, 104);
-            this.panel1.TabIndex = 0;
             // 
             // FrmFactura
             // 

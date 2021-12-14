@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.PanelCampos = new System.Windows.Forms.Panel();
+            this.cbCampo5 = new System.Windows.Forms.ComboBox();
             this.dtpCampo4 = new System.Windows.Forms.DateTimePicker();
             this.cbCampo9 = new System.Windows.Forms.ComboBox();
             this.lblCampo1 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.txtCampo9 = new System.Windows.Forms.TextBox();
             this.txtCampo6 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbCampo5 = new System.Windows.Forms.ComboBox();
             this.PanelCampos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,15 @@
             this.PanelCampos.Size = new System.Drawing.Size(237, 365);
             this.PanelCampos.TabIndex = 7;
             this.PanelCampos.Visible = false;
+            // 
+            // cbCampo5
+            // 
+            this.cbCampo5.FormattingEnabled = true;
+            this.cbCampo5.ItemHeight = 13;
+            this.cbCampo5.Location = new System.Drawing.Point(100, 137);
+            this.cbCampo5.Name = "cbCampo5";
+            this.cbCampo5.Size = new System.Drawing.Size(134, 21);
+            this.cbCampo5.TabIndex = 59;
             // 
             // dtpCampo4
             // 
@@ -143,12 +152,18 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(60, 333);
+            this.btnInsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnInsertar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnInsertar.FlatAppearance.BorderSize = 0;
+            this.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertar.ForeColor = System.Drawing.Color.White;
+            this.btnInsertar.Location = new System.Drawing.Point(69, 319);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertar.Size = new System.Drawing.Size(103, 36);
             this.btnInsertar.TabIndex = 10;
             this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.UseVisualStyleBackColor = false;
             this.btnInsertar.Visible = false;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
@@ -285,15 +300,6 @@
             this.panel1.Size = new System.Drawing.Size(137, 85);
             this.panel1.TabIndex = 8;
             // 
-            // cbCampo5
-            // 
-            this.cbCampo5.FormattingEnabled = true;
-            this.cbCampo5.ItemHeight = 13;
-            this.cbCampo5.Location = new System.Drawing.Point(100, 137);
-            this.cbCampo5.Name = "cbCampo5";
-            this.cbCampo5.Size = new System.Drawing.Size(134, 21);
-            this.cbCampo5.TabIndex = 59;
-            // 
             // FrmInsertarYEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,6 +307,7 @@
             this.ClientSize = new System.Drawing.Size(270, 463);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelCampos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmInsertarYEditar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmInsertarYEditar_FormClosing);
             this.Load += new System.EventHandler(this.FrmInsertarYEditar_Load);

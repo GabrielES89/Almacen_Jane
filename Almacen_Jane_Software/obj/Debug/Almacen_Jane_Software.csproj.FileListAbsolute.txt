@@ -79,13 +79,8 @@ C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Data.En
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\bin\Debug\MySql.Web.xml
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csprojAssemblyReference.cache
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.exe.config
-C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmFactura.resources
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmInicio.resources
-C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmCambiarContraseña.resources
-C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmInsertarYEditar.resources
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmMenu.resources
-C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmRegistrarse.resources
-C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.FrmRestablecerContraseña.resources
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.Properties.Resources.resources
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.GenerateResource.cache
 C:\xampp\htdocs\Repos\Almacen_Jane\Almacen_Jane_Software\obj\Debug\Almacen_Jane_Software.csproj.CoreCompileInputs.cache
