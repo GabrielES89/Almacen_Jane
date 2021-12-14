@@ -221,6 +221,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(20);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(684, 460);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.Visible = false;
@@ -264,7 +265,7 @@
             // 
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_titulo.Location = new System.Drawing.Point(86, 43);
+            this.lbl_titulo.Location = new System.Drawing.Point(114, 45);
             this.lbl_titulo.Name = "lbl_titulo";
             this.lbl_titulo.Size = new System.Drawing.Size(357, 55);
             this.lbl_titulo.TabIndex = 32;
@@ -291,7 +292,7 @@
             // pB_Mobile
             // 
             this.pB_Mobile.Image = global::Almacen_Jane_Software.Properties.Resources.mobile;
-            this.pB_Mobile.Location = new System.Drawing.Point(6, 48);
+            this.pB_Mobile.Location = new System.Drawing.Point(17, 45);
             this.pB_Mobile.Name = "pB_Mobile";
             this.pB_Mobile.Size = new System.Drawing.Size(56, 50);
             this.pB_Mobile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
