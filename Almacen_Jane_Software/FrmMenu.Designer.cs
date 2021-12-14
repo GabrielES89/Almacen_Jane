@@ -236,10 +236,63 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(20);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(705, 464);
+            this.dataGridView1.Size = new System.Drawing.Size(684, 460);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            //
+            // panel2
+            //
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Location = new System.Drawing.Point(0, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(684, 20);
+            this.panel2.TabIndex = 6;
+            //
+            // btnDInsertar
+            //
+            this.btnDInsertar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDInsertar.Location = new System.Drawing.Point(597, 64);
+            this.btnDInsertar.Name = "btnDInsertar";
+            this.btnDInsertar.Size = new System.Drawing.Size(75, 23);
+            this.btnDInsertar.TabIndex = 27;
+            this.btnDInsertar.Text = "Insertar";
+            this.btnDInsertar.UseVisualStyleBackColor = true;
+            this.btnDInsertar.Click += new System.EventHandler(this.btnDInsertar_Click);
+            //
+            // panel_superior
+            //
+            this.panel_superior.BackColor = System.Drawing.Color.White;
+            this.panel_superior.Controls.Add(this.lbl_titulo);
+            this.panel_superior.Controls.Add(this.pB_Mobile);
+            this.panel_superior.Controls.Add(this.btnDInsertar);
+            this.panel_superior.Controls.Add(this.panel2);
+            this.panel_superior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_superior.Location = new System.Drawing.Point(184, 0);
+            this.panel_superior.Name = "panel_superior";
+            this.panel_superior.Size = new System.Drawing.Size(684, 120);
+            this.panel_superior.TabIndex = 32;
+            //
+            // lbl_titulo
+            //
+            this.lbl_titulo.AutoSize = true;
+            this.lbl_titulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.Location = new System.Drawing.Point(114, 45);
+            this.lbl_titulo.Name = "lbl_titulo";
+            this.lbl_titulo.Size = new System.Drawing.Size(357, 55);
+            this.lbl_titulo.TabIndex = 32;
+            this.lbl_titulo.Text = "Almacen Jane";
+            //
+            // dataGridViewImageColumn1
+            //
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Almacen_Jane_Software.Properties.Resources.Editar1;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.Width = 5;
             //
             // Editar
             //
@@ -250,28 +303,31 @@
             this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Editar.Width = 5;
             //
-            // Borrar
+            // pB_Mobile
             //
-            this.Borrar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Borrar.HeaderText = "";
-            this.Borrar.Image = global::Almacen_Jane_Software.Properties.Resources.Borrar;
-            this.Borrar.Name = "Borrar";
-            this.Borrar.Width = 5;
+            this.pB_Mobile.Image = global::Almacen_Jane_Software.Properties.Resources.mobile;
+            this.pB_Mobile.Location = new System.Drawing.Point(17, 45);
+            this.pB_Mobile.Name = "pB_Mobile";
+            this.pB_Mobile.Size = new System.Drawing.Size(56, 50);
+            this.pB_Mobile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pB_Mobile.TabIndex = 31;
+            this.pB_Mobile.TabStop = false;
+            this.pB_Mobile.Click += new System.EventHandler(this.pB_Mobile_Click);
             //
-            // dataGridViewImageColumn1
+            // button1
             //
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::Almacen_Jane_Software.Properties.Resources.Editar1;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            //
-            // dataGridViewImageColumn2
-            //
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::Almacen_Jane_Software.Properties.Resources.Borrar;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Almacen_Jane_Software.Properties.Resources.empleado;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(6, 120);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 39);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Empleados";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             //
             // FrmMenu
             //
