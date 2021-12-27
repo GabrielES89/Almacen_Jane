@@ -59,11 +59,17 @@
     <Compile Include="Facturas\FrmFactura.Designer.cs">
       <DependentUpon>FrmFactura.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formas_EYM\frmEmpleados.cs">
+    <Compile Include="Formas_Editar\frmEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formas_EYM\frmEmpleados.Designer.cs">
+    <Compile Include="Formas_Editar\frmEmpleados.Designer.cs">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas_Editar\frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas_Editar\frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmIniciarSesion.cs">
       <SubType>Form</SubType>
@@ -105,6 +111,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Facturas\FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas_Editar\frmEmpleados.resx">
+      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas_Editar\frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.cs</DependentUpon>
@@ -178,13 +190,10 @@
     <None Include="Resources\Guardar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mobile1.png" />
+    <None Include="Resources\Borrar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mobile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\empleado.png" />
+    <None Include="Resources\Editar345.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
